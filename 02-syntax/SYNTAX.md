@@ -16,3 +16,7 @@ To fullfill the goal of the topic:
 
     How many dollars have John and Nick in total?
 
+- Investigate the integral division
+
+    When the dividend and the divisor are integral variables
+    the quotient is an integral also. The remainder is lost.

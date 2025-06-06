@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>jupik.syntax</groupId>
+        <artifactId>vars</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <groupId>jupik.syntax.vars</groupId>
+    <artifactId>jupik-divs</artifactId>
+    <version>1.0.0</version>
+
+    <name>Divs Project</name>
+    <description>
+        An example of disivion of integral variables
+    </description>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>jupik.syntax.vars.divs.Main</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
