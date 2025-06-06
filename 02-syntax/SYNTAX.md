@@ -20,3 +20,6 @@ To fullfill the goal of the topic:
 
     When the dividend and the divisor are integral variables
     the quotient is an integral also. The remainder is lost.
+
+    To get the remainder of the division the operator '%'
+    could be used.

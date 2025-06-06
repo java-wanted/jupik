@@ -23,5 +23,6 @@
     <modules>
         <module>dols</module>
         <module>divs</module>
+        <module>rems</module>
     </modules>
 </project>
