@@ -24,5 +24,6 @@
         <module>dols</module>
         <module>divs</module>
         <module>rems</module>
+        <module>days</module>
     </modules>
 </project>

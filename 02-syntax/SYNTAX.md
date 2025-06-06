@@ -23,3 +23,12 @@ To fullfill the goal of the topic:
 
     To get the remainder of the division the operator '%'
     could be used.
+
+- Solve the following issue
+
+    There is a variable that keeps a number of days, e.g. 10000.
+    Represent this number as a number of years and months and days
+    in the following condition:
+
+    - If the variable keeps the number 365 the result MUST BE one year,
+      zero mongth and zero day.
