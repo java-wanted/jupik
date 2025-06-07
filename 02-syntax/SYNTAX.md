@@ -142,3 +142,18 @@ Solve the following issue:
 - If it is night the program MUST manage you to sleep down.
 
 - The block else MUST NOT be used in the program.
+
+### String
+
+There is a type String in Java. It is a reference type. This type allows to keep
+strings of characters, i.g. the string 'Hello, World!'.
+
+A String variables could contain TTY control characters, e.g. the character NL.
+
+Solve the following issue:
+
+- Create variables to keep a name, an age, generate a string in the format
+
+        'Hi, ' NAME '!. You are ' AGE '!'
+
+- Print the generated string on a terminal.

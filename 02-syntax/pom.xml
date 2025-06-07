@@ -53,5 +53,6 @@
         <module>fracs</module>
         <module>chars</module>
         <module>bools</module>
+        <module>stris</module>
     </modules>
 </project>
