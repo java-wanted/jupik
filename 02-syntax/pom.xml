@@ -50,5 +50,6 @@
         <module>vars</module>
         <module>conds</module>
         <module>ints</module>
+        <module>fracs</module>
     </modules>
 </project>

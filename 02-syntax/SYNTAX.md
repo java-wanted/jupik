@@ -74,4 +74,23 @@ There are properties of numbers in Java:
 - Solve the following issue
 
     There is a variable of the type int assigned with 1. There is a variable
-    of the type byte. Assign the later with the value of the former.
+    of the type byte. Assign the former with the value of the later.
+
+### Floats
+
+There are two type of fractional numbers in Java:
+
+- float - four bytes
+- double - eight bytes
+
+There are properties of floats in Java:
+
+- A float literal, i.g. 10.1 is presented as a double
+
+    To declare a float literal to be presented as a float the literal
+    MUST BE suffixed with f, e.g. 10.1f.
+
+- Solve the following issue
+
+    Create a few varables that contains the age of some members of a family.
+    Calculate the mean of values of this variables.
