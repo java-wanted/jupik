@@ -48,5 +48,6 @@
 
     <modules>
         <module>vars</module>
+        <module>conds</module>
     </modules>
 </project>

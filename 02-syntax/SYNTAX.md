@@ -32,3 +32,21 @@ To fullfill the goal of the topic:
 
     - If the variable keeps the number 365 the result MUST BE one year,
       zero mongth and zero day.
+
+### Conditional operator
+
+To fullfil the goal of the topic:
+
+- Investigate the conditional operation if-else
+
+    It allows to execute some logic iff a condition, i.e. a boolean expression
+    is satisfied.
+
+- Solve the following issue
+
+    There is a variable that keeps the sum of dollars in your pocker. Write
+    a logic that manages you what you MUST eat:
+
+    - if there is more than ten dollars you are managed to eat a Pizza
+    - if there is from six up to 10 dollars you are namaged to eat an Hamburher
+    - otherwise you MUST BE managed to jre a Sandwich
