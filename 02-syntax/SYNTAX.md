@@ -94,3 +94,20 @@ There are properties of floats in Java:
 
     Create a few varables that contains the age of some members of a family.
     Calculate the mean of values of this variables.
+
+### Characters
+
+There is a single type for symbols in Java, the type char.
+
+Actually, it is a numeric type but it could be assigned with
+a character literal:
+
+    char x = 'a';
+
+- Solve the following issue
+
+    - Create a few variables contining names and ages of members of a family.
+
+    - Output the name and the age of each member, a member per line
+
+        NAME ': ' AGE

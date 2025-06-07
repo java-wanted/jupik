@@ -51,5 +51,6 @@
         <module>conds</module>
         <module>ints</module>
         <module>fracs</module>
+        <module>chars</module>
     </modules>
 </project>
