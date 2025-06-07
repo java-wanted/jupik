@@ -111,3 +111,34 @@ a character literal:
     - Output the name and the age of each member, a member per line
 
         NAME ': ' AGE
+
+### Boolean
+
+There is a type to keep boolean values, the type boolean:
+
+- It could be assigned with the value true or the value false
+
+- It is the only type the condition of the confition operator MUST BE
+  evaluated to
+
+- The comparison operators returns a boolean value
+
+- There are operators on boolean values: conjunction, disjunction and
+  inversion.
+
+Solve the following issue:
+
+- Create a program that manages your to process some actions depending on
+  the time of day and the weather.
+
+- There MUST BE two variables, a one to keep whether the weather is good and
+  an other one to keep whether it is night now.
+
+- If it is day and the weather is fine the program MUST manage you to go out.
+
+- If it is day and the weather is not fine the program MUST manage you to read
+  a book.
+
+- If it is night the program MUST manage you to sleep down.
+
+- The block else MUST NOT be used in the program.

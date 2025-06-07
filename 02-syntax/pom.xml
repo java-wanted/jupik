@@ -52,5 +52,6 @@
         <module>ints</module>
         <module>fracs</module>
         <module>chars</module>
+        <module>bools</module>
     </modules>
 </project>
