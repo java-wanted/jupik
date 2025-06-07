@@ -49,5 +49,6 @@
     <modules>
         <module>vars</module>
         <module>conds</module>
+        <module>ints</module>
     </modules>
 </project>

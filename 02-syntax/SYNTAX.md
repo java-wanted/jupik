@@ -50,3 +50,28 @@ To fullfil the goal of the topic:
     - if there is more than ten dollars you are managed to eat a Pizza
     - if there is from six up to 10 dollars you are namaged to eat an Hamburher
     - otherwise you MUST BE managed to jre a Sandwich
+
+### Integers
+
+There are for integer types in Java:
+
+- byte - one 8-bit byte
+- short - two 8-bit bytes
+- int - four 8-bit bytes
+- long - eight 8-bit bytes
+
+There are properties of numbers in Java:
+
+- A variable of a longer type could be assigned with a shorter one
+
+- A number literal, i.g. 10, is presented as an int
+
+- There are few ways to increment a value of a variable
+
+- To assign a variable of a shorter type a longer one MUST BE casted into
+  a shorter type explicitly
+
+- Solve the following issue
+
+    There is a variable of the type int assigned with 1. There is a variable
+    of the type byte. Assign the later with the value of the former.
