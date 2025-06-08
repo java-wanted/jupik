@@ -227,3 +227,12 @@ An other other issue:
     - Create an array of a few arbitrary integer numbers.
 
     - Print out elements of the array in the reverse order.
+
+### Loop for each
+
+There is a loop *for each* in Java. It could be used to iterate over elements
+of arrays.
+
+Solve an issue:
+
+    - Create an array of names of some students.

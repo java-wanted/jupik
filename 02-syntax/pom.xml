@@ -56,5 +56,6 @@
         <module>stris</module>
         <module>loops</module>
         <module>arrs</module>
+        <module>forch</module>
     </modules>
 </project>
