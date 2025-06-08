@@ -157,3 +157,18 @@ Solve the following issue:
         'Hi, ' NAME '!. You are ' AGE '!'
 
 - Print the generated string on a terminal.
+
+### Cycles
+
+There are cycles in Java. Cycles allows to repeat some instructions until it is
+required.
+
+An example:
+
+- Output onto a terminal natural numbers from one to one thousand.
+
+    Use the loop while:
+
+        number := 0
+        while ++number <= 1000
+            print number
