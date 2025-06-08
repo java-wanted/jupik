@@ -172,3 +172,9 @@ An example:
         number := 0
         while ++number <= 1000
             print number
+
+An other example:
+
+- Output onto a terminal all even natural numbers from one to thousand.
+
+    Use the loop while again.

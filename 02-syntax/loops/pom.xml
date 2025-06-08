@@ -22,5 +22,6 @@
 
     <modules>
         <module>wnums</module>
+        <module>enums</module>
     </modules>
 </project>
