@@ -191,3 +191,24 @@ Solve the following issue:
       zero if meet the following condition.
 
     - Output all numbers that are devided by three with the zero remainder.
+
+### Arrays
+
+There are arrays in Java. An array in Java is a named map from a continues
+sequence of all integers starting from from zero, indexes, onto a set of unnamed
+variables of the same type.
+
+For example, to declare an array of N empty Strings the following statement
+could be used:
+
+    String []array = new String[N];
+
+To assign a value to be the value of the i-th element of the array the following
+statement could be used:
+
+    array[i - 1] = "A string";
+
+An issue:
+
+    - Create an array of twelve String objects.
+    - Fill it with the names of month.

@@ -55,5 +55,6 @@
         <module>bools</module>
         <module>stris</module>
         <module>loops</module>
+        <module>arrs</module>
     </modules>
 </project>
