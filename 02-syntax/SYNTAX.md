@@ -221,3 +221,9 @@ An other issue:
     - Print the space and comma between the names of months.
 
     - Print the dot after the name of the last months.
+
+An other other issue:
+
+    - Create an array of a few arbitrary integer numbers.
+
+    - Print out elements of the array in the reverse order.

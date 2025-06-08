@@ -23,5 +23,6 @@
     <modules>
         <module>mars</module>
         <module>omars</module>
+        <module>rars</module>
     </modules>
 </project>
