@@ -263,3 +263,12 @@ Solve the following issue:
     - Print out the season the month belons to.
 
     - To solve the issue the operator switch MUST BE used.
+
+### Conclusion
+
+Thus, the all basic syntax of Java is learnt now. Namely, the following has been
+studed:
+
+    - How to use primitive types and the type String
+
+    - What arrays, loops, conditions and the switch operator are.
