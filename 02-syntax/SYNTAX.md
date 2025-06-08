@@ -178,3 +178,16 @@ An other example:
 - Output onto a terminal all even natural numbers from one to thousand.
 
     Use the loop while again.
+
+There is the loop for in Java. It allows to combive declaration of variables,
+checking the loop condition and expressioins to update of some variables on lines
+the operator for is declared:
+
+    'for' DECLARATIONS ';' LOOP-CONDITION ';' EXPRESSIONS
+
+Solve the following issue:
+
+    - Use the loop for to output all integer numbers from one thousand down to
+      zero if meet the following condition.
+
+    - Output all numbers that are devided by three with the zero remainder.
