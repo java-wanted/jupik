@@ -236,3 +236,9 @@ of arrays.
 Solve an issue:
 
     - Create an array of names of some students.
+
+Solve an other issue:
+
+    - Create an array of one hundred integer numbers.
+
+    - Assign the elements values from 100 up to 200 exclusive.

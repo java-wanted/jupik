@@ -22,5 +22,6 @@
 
     <modules>
         <module>snams</module>
+        <module>hints</module>
     </modules>
 </project>
