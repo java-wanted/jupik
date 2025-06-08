@@ -212,3 +212,12 @@ An issue:
 
     - Create an array of twelve String objects.
     - Fill it with the names of month.
+
+An other issue:
+
+    - Print out the array of the previous issue on a single line, months
+      in order.
+
+    - Print the space and comma between the names of months.
+
+    - Print the dot after the name of the last months.
