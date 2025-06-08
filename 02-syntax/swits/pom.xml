@@ -22,5 +22,6 @@
 
     <modules>
         <module>rmons</module>
+        <module>wseas</module>
     </modules>
 </project>

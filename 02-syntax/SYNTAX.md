@@ -252,3 +252,14 @@ Solve the following issue:
     - Receive the number of a month from a user.
 
     - Prints the name of the month on a terminal.
+
+In Java the only value of the only one expression could be used to select
+a branch of the switch operation.
+
+Solve the following issue:
+
+    - Receive a name of a month from a user.
+
+    - Print out the season the month belons to.
+
+    - To solve the issue the operator switch MUST BE used.
