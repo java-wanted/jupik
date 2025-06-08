@@ -57,5 +57,6 @@
         <module>loops</module>
         <module>arrs</module>
         <module>forch</module>
+        <module>swits</module>
     </modules>
 </project>

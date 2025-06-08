@@ -242,3 +242,13 @@ Solve an other issue:
     - Create an array of one hundred integer numbers.
 
     - Assign the elements values from 100 up to 200 exclusive.
+
+### Switch
+
+There is the operator switch in Java.
+
+Solve the following issue:
+
+    - Receive the number of a month from a user.
+
+    - Prints the name of the month on a terminal.
