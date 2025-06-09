@@ -33,3 +33,9 @@ In Java class is defined by
 - its operations, *methods* in Java
 
 So, to be simple, a class in Java is just an ADT.
+
+A Logistic Issue:
+
+- Create a class Box that keeps the height, length and width of a box.
+
+- Instantiate two boxes and calculate they volumes.
