@@ -22,5 +22,6 @@
 
     <modules>
         <module>dog</module>
+        <module>rdog</module>
     </modules>
 </project>

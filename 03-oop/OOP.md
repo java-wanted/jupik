@@ -73,3 +73,14 @@ Solve the following issue:
 
 - Create an instance of the class Dog and use this operation to output the
   information onto a terminal.
+
+If an operatioin is not intended to return a value its return type could be
+marked with the type void.
+
+Solve the following issue:
+
+- Extend a class Dog with the property speed of type int and an operation
+  run.
+
+- The operation run MUST output the word "Run" the number of times equals
+  the value of the property speed.
