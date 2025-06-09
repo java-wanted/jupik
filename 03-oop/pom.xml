@@ -48,5 +48,6 @@
 
     <modules>
         <module>01-intro</module>
+        <module>02-optro</module>
     </modules>
 </project>

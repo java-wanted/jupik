@@ -58,3 +58,18 @@ Solve the following demographics issue:
       arbitrary values.
 
     - Print the mean age of this humans.
+
+### Introduction to methods
+
+There are so called *methods* in Java. A *method* is just an operation
+on an ADT.
+
+Solve the following issue:
+
+- Create a class Dog to describe the name, the kind and the weight of a dog.
+
+- Provide an operation that returns a string representation of the all
+  information provided in an instance of the class Dog.
+
+- Create an instance of the class Dog and use this operation to output the
+  information onto a terminal.
