@@ -23,5 +23,6 @@
     <modules>
         <module>box</module>
         <module>rbox</module>
+        <module>hums</module>
     </modules>
 </project>

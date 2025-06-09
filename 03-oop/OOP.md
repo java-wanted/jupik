@@ -49,3 +49,12 @@ Reference types:
     - If variable of a some type refere to an instance the such type is called
       a reference type in Java. A few variables of a reference type could refer
       to the same instance of this class.
+
+Solve the following demographics issue:
+
+    - Create a class to describe humans with a name, an age and a weight.
+
+    - Create three instancies of humans and assign all its properties with
+      arbitrary values.
+
+    - Print the mean age of this humans.
