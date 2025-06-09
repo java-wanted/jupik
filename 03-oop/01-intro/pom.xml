@@ -22,5 +22,6 @@
 
     <modules>
         <module>box</module>
+        <module>rbox</module>
     </modules>
 </project>

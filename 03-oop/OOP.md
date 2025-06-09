@@ -39,3 +39,13 @@ A Logistic Issue:
 - Create a class Box that keeps the height, length and width of a box.
 
 - Instantiate two boxes and calculate they volumes.
+
+Reference types:
+
+    - A variable of the type of a class does not keeps the class. Instead, it
+      refera to an instance of the class if assigned. To create an instance of
+      a class the operator new MUST BE used.
+
+    - If variable of a some type refere to an instance the such type is called
+      a reference type in Java. A few variables of a reference type could refer
+      to the same instance of this class.
