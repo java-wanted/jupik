@@ -84,3 +84,20 @@ Solve the following issue:
 
 - The operation run MUST output the word "Run" the number of times equals
   the value of the property speed.
+
+### Parameters
+
+In Java *methods* cold be provided with parameters.
+
+In an operations, properties and operations of a class could be refered
+with the keyword *this*. For example:
+
+    class A
+        field
+        op(field)
+            this.field = field
+
+An example:
+
+- To extend the class Box with an operation to configure values
+  of fields.
