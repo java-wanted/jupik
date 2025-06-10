@@ -101,3 +101,11 @@ An example:
 
 - To extend the class Box with an operation to configure values
   of fields.
+
+Solve the follwoing issue:
+
+- Create a class to keep the properties length and width of an rectangle.
+
+- Provide an operation to set this properties.
+
+- Provide an operation to calculate the area of the rectangle.

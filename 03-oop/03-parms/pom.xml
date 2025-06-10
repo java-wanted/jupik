@@ -22,5 +22,6 @@
 
     <modules>
         <module>pbox</module>
+        <module>rect</module>
     </modules>
 </project>
