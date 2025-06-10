@@ -109,3 +109,19 @@ Solve the follwoing issue:
 - Provide an operation to set this properties.
 
 - Provide an operation to calculate the area of the rectangle.
+
+### Initialisation of objects
+
+There are special operations to initialise ojects, so called *constructors*.
+A contructor is called on the operator new. Iff no constructor is declared
+a default one is provided by the Java translator.
+
+Solve the following HRM problem:
+
+- Create a class to keep properties of an employee: a name, a position and
+  salary.
+
+- Provide a constructor to initialise this properties.
+
+- Provide an operation to print the all information about a such employee
+  onto a terminal.
