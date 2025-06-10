@@ -125,3 +125,37 @@ Solve the following HRM problem:
 
 - Provide an operation to print the all information about a such employee
   onto a terminal.
+
+### Overloading
+
+It is possible to assign the same name for a few operations of a class. If so,
+a translator selects a one by parameters it is called with. The such property
+is called *overloading* in Java.
+
+In Java, to call a constructor from an other constructor the keywork this could
+be used:
+
+        this(parameters...)
+
+Solve the following frightening issue:
+
+- Create a class to keep properties of a monster: the number of eyes, hands and
+  legs.
+
+- Provide constructors to assign properties:
+
+    - a one without parameters to assign all properties with the number two
+
+    - a one with the only one parameter to be assigned to all properties
+
+    - a one that requires to specify values for each property
+
+- Provide an operation *voice*:
+
+    - it MUST output the string *Grrrr...* if called without parameters
+
+    - it MUST output the same string a specific number of times if called with
+      an integer parameter *count*
+
+    - it MUST output a specific string a specific number of times if called with
+      integer and string parameters *count* and *word* in order.

@@ -67,5 +67,6 @@
         <module>02-optro</module>
         <module>03-parms</module>
         <module>04-init</module>
+        <module>05-over</module>
     </modules>
 </project>
