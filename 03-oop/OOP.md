@@ -159,3 +159,17 @@ Solve the following frightening issue:
 
     - it MUST output a specific string a specific number of times if called with
       integer and string parameters *count* and *word* in order.
+
+
+### Objects like parameters
+
+It is possible to pass reference types as paramters or the return value of
+operations.
+
+Solve the following issue:
+
+- Extend the class Box with an operation to compare an instance against an other
+  one by the volume.
+
+- The operation MUST return -1, 0 or 1 if the volume of the instance is lesser,
+  equal or greater that the volume of the other instance.

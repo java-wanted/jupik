@@ -68,5 +68,6 @@
         <module>03-parms</module>
         <module>04-init</module>
         <module>05-over</module>
+        <module>06-rpams</module>
     </modules>
 </project>
