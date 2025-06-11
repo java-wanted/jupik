@@ -6,17 +6,17 @@ public class Cbox extends Pbox implements Comparable<Pbox>
 {
 	public static final double DEFAULT_SIZE = 10;
 
-	Cbox(double height, double length, double width)
+	public Cbox(double height, double length, double width)
 	{
 		setDimensions(height, length, width);
 	}
 
-	Cbox(double size)
+	public Cbox(double size)
 	{
 		this(size, size, size);
 	}
 
-	Cbox()
+	public Cbox()
 	{
 		this(DEFAULT_SIZE);
 	}

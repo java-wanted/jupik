@@ -173,3 +173,7 @@ Solve the following issue:
 
 - The operation MUST return -1, 0 or 1 if the volume of the instance is lesser,
   equal or greater that the volume of the other instance.
+
+Solve the following issue:
+
+- Extend the class Box with an operation to return a copy of an instance.
