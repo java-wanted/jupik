@@ -177,3 +177,8 @@ Solve the following issue:
 Solve the following issue:
 
 - Extend the class Box with an operation to return a copy of an instance.
+
+Solve the follwoing issue:
+
+- Extend the class Box with an operation to return a Box with all dimensions
+  doubled.

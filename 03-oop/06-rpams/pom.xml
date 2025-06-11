@@ -23,5 +23,6 @@
     <modules>
         <module>cbox</module>
         <module>sbox</module>
+        <module>dbox</module>
     </modules>
 </project>
