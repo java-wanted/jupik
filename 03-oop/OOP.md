@@ -212,3 +212,21 @@ Solve the following issue:
 - The all fields MUST BE private.
 
 - It MUST BE possible to access the operations of the class from other packages.
+
+### Keywords static and final and arguments varargs
+
+The keywords static allows to not provide an operation with an instance of its
+class.
+
+The keywords final if relates to a field prohibits to modify this field after it
+has been initialised.
+
+It is possible to define an operation to accept a variable number of parameters
+of the same type. The parameters will be packed into an array by the translator.
+For example:
+
+    func(type... name)
+        for i = 0; i < name.length; ++i
+            print name[i]
+
+    func(1, 2)

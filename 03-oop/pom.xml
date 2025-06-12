@@ -70,5 +70,6 @@
         <module>05-over</module>
         <module>06-rpams</module>
         <module>07-amods</module>
+        <module>08-fivas</module>
     </modules>
 </project>
