@@ -23,5 +23,6 @@
     <modules>
         <module>abox-api</module>
         <module>abox</module>
+        <module>alog</module>
     </modules>
 </project>
