@@ -69,5 +69,6 @@
         <module>04-init</module>
         <module>05-over</module>
         <module>06-rpams</module>
+        <module>07-amods</module>
     </modules>
 </project>

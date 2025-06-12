@@ -182,3 +182,33 @@ Solve the follwoing issue:
 
 - Extend the class Box with an operation to return a Box with all dimensions
   doubled.
+
+### Access Modifiers
+
+There are access modifiers in Java: public, private, protected and package
+private. The modifiers define the scope a class and its properties could be
+accessed from.
+
+The keywork private prevents to access a property of a class outside of
+operations of this class.
+
+It is NOT REQUIRED to set a property to be private in Java. Ask some Java
+translator if worry. But it could be valuable to mark:
+
+- a property is out of attention of a user of a class
+
+- there is a constraint to modify a property
+
+There are name spaces in Java. They are called packages.
+
+If a class or its property has no access modifier it has the package private
+modifier by default. And Java prevents to access the such entiry from an
+other package.
+
+Solve the following issue:
+
+- Rewrite the class Box to use access modifiers.
+
+- The all fields MUST BE private.
+
+- It MUST BE possible to access the operations of the class from other packages.
