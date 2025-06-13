@@ -230,3 +230,36 @@ For example:
             print name[i]
 
     func(1, 2)
+
+### Custom collection
+
+In Java collection is a set of elements of the same type.
+
+There are issues:
+
+- List items, for example to output them onto a terminal.
+
+- Add or remove an item from the set of existing ones.
+
+Solve the follwoing collection issue:
+
+- Create a list of items of a reference type
+
+- There MUST the the following operations on the collection
+
+    - *add(item)* - add an item to be the last element of the list
+
+    - *remove(item)* - remove the first item if exists in the list
+
+    - *remove(index)* - remove an item at the index index
+
+    - *size()* - returns the number of items in the list
+
+    - *get(index)* - get the reference on the item in the collection
+
+- The data of the collection MUST BE kept in a Java array
+
+    - Initially, the capacity of the underlaying array MUST BE 10
+
+    - If there is no free array element to add an item, the capacity
+      of the underlaying array MUST BE doubled

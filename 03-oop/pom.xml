@@ -58,6 +58,10 @@
                     <artifactId>maven-clean-plugin</artifactId>
                     <version>3.2.0</version>
                 </plugin>
+                <plugin>
+                    <artifactId>maven-javadoc-plugin</artifactId>
+                    <version>3.11.2</version>
+                </plugin>
             </plugins>
         </pluginManagement>
     </build>
@@ -71,5 +75,6 @@
         <module>06-rpams</module>
         <module>07-amods</module>
         <module>08-fivas</module>
+        <module>09-cols</module>
     </modules>
 </project>
