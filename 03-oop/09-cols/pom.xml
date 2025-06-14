@@ -22,5 +22,6 @@
 
     <modules>
         <module>list</module>
+        <module>hidis</module>
     </modules>
 </project>

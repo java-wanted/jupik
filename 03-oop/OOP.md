@@ -263,3 +263,9 @@ Solve the follwoing collection issue:
 
     - If there is no free array element to add an item, the capacity
       of the underlaying array MUST BE doubled
+
+Use the list created above to sole the following HRM issue:
+
+- Let there is a list of employees.
+
+- Dissmis a one employee and hire an other one.
