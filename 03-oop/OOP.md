@@ -269,3 +269,22 @@ Use the list created above to sole the following HRM issue:
 - Let there is a list of employees.
 
 - Dissmis a one employee and hire an other one.
+
+### Wrapper types
+
+In Java there are reference types for the primitive ones. The such types are
+called wrapper types. For example, there is a wrapper type *Integer* for the
+type *int*.
+
+Such wrappers provides operations to process variables of primitive types.
+For example, the operation *Integer.parseInt*.
+
+Solve the following demographic issue:
+
+- There is an information about a human in the format:
+
+        'This is NAME. He|She is AGE years old.'
+
+- Extract the values for the NAME and AGE
+
+- Create an instance of a class to represent this information
