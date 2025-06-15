@@ -23,5 +23,6 @@
     <modules>
         <module>ocafs</module>
         <module>wbox</module>
+        <module>wlog</module>
     </modules>
 </project>
