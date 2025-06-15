@@ -80,5 +80,6 @@
         <module>11-ucols</module>
         <module>12-inher</module>
         <module>13-inhov</module>
+        <module>14-inhab</module>
     </modules>
 </project>

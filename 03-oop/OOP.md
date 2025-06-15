@@ -361,3 +361,15 @@ Solve the following logistics issue:
 - Provide a class that extends it with the property weight
 
 - Provide an operation to print the all properties onto a terminal
+
+### Inheritance. Abstract operations
+
+Solve the following geometrics issue:
+
+- Create a class Shape with two properties: a and b, the length of sides.
+  Provide a constructor to configure this properties
+
+- Provide an operation to get the perimeter of this shapes.
+
+- Create classes to represent triangles and rectangles. The former has
+  the third parameter, c, the length of the third side.
