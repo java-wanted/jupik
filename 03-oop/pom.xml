@@ -78,5 +78,6 @@
         <module>09-cols</module>
         <module>10-wraps</module>
         <module>11-ucols</module>
+        <module>12-inher</module>
     </modules>
 </project>

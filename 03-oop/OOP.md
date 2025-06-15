@@ -305,3 +305,35 @@ Use a one to solve the followin issue:
   and i-th integer of the collections above as a string in the format
 
         NUMBER '-' NAME
+
+### Inheritance
+
+The inheritance means that some properties of a class could be provided from
+some generic class.
+
+For example, let there are some generic properties of a family of cats: fur,
+legs, tail and the ability to hunter. But a particular member of this family
+could have some specific properties also. For example, a cat vulgaris could
+has the ability to drink whiskys.
+
+A class that provides generic properties for some other classes is called a
+super class. Classes that inherits some properties of a super class are called
+sub classes.
+
+The modificator protected could be used to accept the access to a property
+from sub classes outside the package of the super class. And the modificator
+private could be used to prevent a property to be accessed from sub classes
+within this package.
+
+Take attention, if no constructor of the super class is called explicitly, the
+default constructor one is always authomatically in Java.
+
+Take attention, if a property if marked to be protected, it could be accessed
+from the whole package the class belongs to.
+
+Solve the following gastronomic issue:
+
+- Create a class to reprersent generic properties fo members of the family
+  Felidae: the number of eyes, legs and the ablitily to eat humans.
+- Create a two subclasses of this class, a class of domestic cats and a class
+  of lions. The former has no ability to eat humans and the later has it.
