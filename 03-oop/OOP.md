@@ -288,3 +288,20 @@ Solve the following demographic issue:
 - Extract the values for the NAME and AGE
 
 - Create an instance of a class to represent this information
+
+### Usual collections
+
+There are preexisting collections of elements in Java. This collections could
+be provided with a type of the elements. But the only reference types are
+accepted.
+
+Use a one to solve the followin issue:
+
+- Create a collection that contains five arbitrary names
+
+- Create a collection that contains five arbitrary integers
+
+- Create a collection where the i-th elements combines the i-th name
+  and i-th integer of the collections above as a string in the format
+
+        NUMBER '-' NAME

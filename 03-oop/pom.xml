@@ -77,5 +77,6 @@
         <module>08-fivas</module>
         <module>09-cols</module>
         <module>10-wraps</module>
+        <module>11-ucols</module>
     </modules>
 </project>
