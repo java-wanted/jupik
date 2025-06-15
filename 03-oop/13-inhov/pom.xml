@@ -22,5 +22,6 @@
 
     <modules>
         <module>ocafs</module>
+        <module>wbox</module>
     </modules>
 </project>

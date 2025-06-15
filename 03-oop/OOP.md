@@ -353,3 +353,11 @@ Solve the following gastronomic issue:
 
 - For Domestic Cat and Lion the operation MUST BE specialised to point that they
   are eating a cap of wiskeys and a peace of a GNU relatively.
+
+Solve the following geometrics issue:
+
+- There is a class Box with properties height, length and width
+
+- Provide a class that extends it with the property weight
+
+- Provide an operation to print the all properties onto a terminal
