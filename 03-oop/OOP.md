@@ -337,3 +337,19 @@ Solve the following gastronomic issue:
   Felidae: the number of eyes, legs and the ablitily to eat humans.
 - Create a two subclasses of this class, a class of domestic cats and a class
   of lions. The former has no ability to eat humans and the later has it.
+
+### Inheritance. Overriding
+
+It is possible to override an operation of a super class in a sub class. To call
+the operation of a super class from a sub class the keyword super could be used.
+
+Solve the following gastronomic issue:
+
+- Update the classes that provide properties fo Felidae with an operation eat.
+
+- The generic version of this operation MUST print the message
+
+        'It is eating a food'
+
+- For Domestic Cat and Lion the operation MUST BE specialised to point that they
+  are eating a cap of wiskeys and a peace of a GNU relatively.
