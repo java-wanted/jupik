@@ -373,3 +373,12 @@ Solve the following geometrics issue:
 
 - Create classes to represent triangles and rectangles. The former has
   the third parameter, c, the length of the third side.
+
+In Java, if it is requested to prohibited creation of instances of a class,
+the such class could be defined with the modifier *abstract*. Some operations of
+an abstract class could be declared with this modifier also. If so, non-abstract
+sublasses of this class MUST define such operations.
+
+In Java, if a class is defined with the modifier final, it is prohibited to
+create instances of this class. Overloading of an operation in sub-classes could be
+prohitined with this modifier also.

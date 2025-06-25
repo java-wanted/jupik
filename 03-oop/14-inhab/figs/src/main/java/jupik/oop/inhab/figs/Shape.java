@@ -11,12 +11,12 @@ public abstract class Shape
 		this.b = b;
 	}
 
-	public double a()
+	public final double a()
 	{
 		return a;
 	}
 
-	public double b()
+	public final double b()
 	{
 		return b;
 	}

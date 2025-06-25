@@ -18,7 +18,7 @@ public class Triangle extends Shape
 		this.c = c;
 	}
 
-	public double c()
+	public final double c()
 	{
 		return c;
 	}
