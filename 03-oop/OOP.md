@@ -382,3 +382,27 @@ sublasses of this class MUST define such operations.
 In Java, if a class is defined with the modifier final, it is prohibited to
 create instances of this class. Overloading of an operation in sub-classes could be
 prohitined with this modifier also.
+
+### Interfaces
+
+An instance could be casted to the type of a super class of its class implicitly.
+It is called *up-cast* in Java. If an instance of the type of a super class is
+casted to a sub-class it is called *down-cast*.
+
+There are so called interfaces in Java. This types declare a set of operations
+that must be implemented in a class.
+
+Java does not support intehitance from a few classes. But a class could implement
+an arbitrary number of interfaces.
+
+Sole the following delivering issue:
+
+- Create an interface Worker with the operation work
+
+- Create classes that implements this interfce: Director, Coder, Cook
+
+- Create an interface Driver with the operation driver. Implement this
+  interface for classes Director and Coder.
+
+- Create instances of the classes above. Place them into collections of those
+  who could work and those who could drive.

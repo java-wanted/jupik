@@ -81,5 +81,6 @@
         <module>12-inher</module>
         <module>13-inhov</module>
         <module>14-inhab</module>
+        <module>15-ifacs</module>
     </modules>
 </project>
