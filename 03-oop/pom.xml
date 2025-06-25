@@ -82,5 +82,6 @@
         <module>13-inhov</module>
         <module>14-inhab</module>
         <module>15-ifacs</module>
+        <module>16-afacs</module>
     </modules>
 </project>

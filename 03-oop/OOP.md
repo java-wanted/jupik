@@ -406,3 +406,30 @@ Sole the following delivering issue:
 
 - Create instances of the classes above. Place them into collections of those
   who could work and those who could drive.
+
+### Interfaces and Anonymous classes
+
+In Java it is possible to implement an interface in the only point the instance
+of the such class is created:
+
+    new INTERFACE() {
+        ; implementation
+    }
+
+The such class has no name assigned explicitly and is called an anonymous class
+in Java.
+
+Solve the following serivce issue:
+
+- Create an interface Waiter with the only operation bring. This operation
+  receives the name of a dish a waiter MUST bring.
+
+- Create a class Diner with the operation order. This operation receives
+  an instance of the Waiter and the name of dish the waiter MUST BE bring in.
+
+- Let a diner to order two dishes:
+
+    - A one MUST BE ordered from a Waiter implemented by a class.
+
+    - An other one MUST BE ordered from a Waiter implemented by an anonymous
+      class.
