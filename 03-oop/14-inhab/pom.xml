@@ -22,5 +22,6 @@
 
     <modules>
         <module>figs</module>
+        <module>ofig</module>
     </modules>
 </project>
