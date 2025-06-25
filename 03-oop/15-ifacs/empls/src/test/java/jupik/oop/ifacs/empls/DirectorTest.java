@@ -40,4 +40,14 @@ public class DirectorTest
 
 		Assertions.assertEquals(x, mockStream.toString());
 	}
+
+	@Test
+	void testDeliver()
+	{
+		String x = "Her is delivering cooking.\n";
+
+		(new Director()).deliver();
+
+		Assertions.assertEquals(x, mockStream.toString());
+	}
 }

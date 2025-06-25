@@ -40,4 +40,14 @@ public class CoderTest
 
 		Assertions.assertEquals(x, mockStream.toString());
 	}
+
+	@Test
+	void testDeliver()
+	{
+		String x = "Her is delivering cooking.\n";
+
+		(new Coder()).deliver();
+
+		Assertions.assertEquals(x, mockStream.toString());
+	}
 }
