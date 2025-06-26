@@ -46,3 +46,23 @@ Solve the following play dev issue:
         The number is NUMBER.
 
 - To print the number the operation format MUST BE used
+
+### Multi-threading
+
+There is multi-threading in Java.
+
+To run a thread of execution the class Thread MUST BE used. There is a
+construction of of this class that accepts an instance of the interface
+Runnable. If so, the operation run of the instance of the interfce will be
+executed on a dedicated thread when the operation start of the instance of
+the class Thread will be called.
+
+Solve the follwoing play dev issue:
+
+- Store a random number from 0 to 1 milliard
+
+- Create a thread that will generate random numbers until a one equals the
+  number stored above is generated
+
+- Create an other thread to print numbers from 0 with step 1 every second
+  until the thread above do not stop to generate numbers
