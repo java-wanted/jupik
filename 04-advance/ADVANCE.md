@@ -32,3 +32,17 @@ get pseudo random nambers.
 Solve the following issue:
 
 - Print a random number in the range from 5 to 10 inclusive
+
+Solve the following play dev issue:
+
+- Model one hundred of a dice roll
+
+- To model a roll
+
+    - Get a pseudo random number from 1 to 6 inclusive
+
+    - Print this number in the format
+
+        The number is NUMBER.
+
+- To print the number the operation format MUST BE used

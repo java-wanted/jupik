@@ -22,5 +22,6 @@
 
     <modules>
         <module>firaten</module>
+        <module>dirols</module>
     </modules>
 </project>
