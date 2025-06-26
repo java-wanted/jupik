@@ -68,5 +68,6 @@
 
     <modules>
         <module>01-excepts</module>
+        <module>02-strran</module>
     </modules>
 </project>
