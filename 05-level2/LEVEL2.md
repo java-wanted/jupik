@@ -25,3 +25,27 @@ Solve the following computational issue:
     - Rising a double value at the power of two
 
 - Provide auto tests for each operation
+
+### JUnit 2
+
+In a JUnit test it is possible:
+
+- To execute an operation before each tests with the annotation *BeforeEach*
+  (*Before* for JUnit4)
+
+- To execute an operation after each test, the annotation *AfterEach*
+  (*After* for JUnit4)
+
+- To test an exeption is rised in a test with the assertion *assertThrows*
+  (with the parameter expected of the *Test* annotation for JUnit4)
+
+Also, it could be preffered to test an operation against a single set of input
+data in a dedicated test.
+
+Solve the following issues:
+
+- Extend the calculator with operations that accepts string representations
+  of valules
+
+- Parametrise tests of operations to be run for a single instance of input
+  data.
