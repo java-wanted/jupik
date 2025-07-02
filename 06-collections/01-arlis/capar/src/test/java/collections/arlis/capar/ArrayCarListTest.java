@@ -1,0 +1,153 @@
+package jupik.collections.arlis.capar;
+
+import org.junit.jupiter.params.provider.CsvSource;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
+
+public class ArrayCarListTest
+{
+    static class TCar implements Car
+    {
+        int index;
+
+        TCar(int index)
+        {
+            this.index = index;
+        }
+
+        public String brand()
+        {
+            return String.format("%d", index);
+        }
+
+        public int number()
+        {
+            return index;
+        }
+
+        @Override
+        public int hashCode()
+        {
+            return Integer.hashCode(index);
+        }
+
+        @Override
+        public boolean equals(Object o)
+        {
+            if (o instanceof TCar c)
+            {
+                return index == c.index;
+            }
+
+            return false;
+        }
+    }
+
+    CarList createCars(int count)
+    {
+        CarList cars = new ArrayCarList();
+
+        for (int i = 0; i < count; ++i)
+        {
+            cars.add(new TCar(i));
+        }
+
+        return cars;
+    }
+
+    @DisplayName("Test size on addition of ")
+    @ParameterizedTest(name = "{0}")
+    @CsvSource({"0", "1", "11"})
+    void testSizeOnAddition(int count)
+    {
+        CarList cars = createCars(count);
+
+        Assertions.assertEquals(count, cars.size());
+    }
+
+    @DisplayName("Test get at ")
+    @ParameterizedTest(name = "{0} of {1}")
+    @CsvSource({"0,1", "0,11", "1,11", "10,11"})
+    void testGetAt(int index, int count)
+    {
+        CarList cars = createCars(count);
+        Car car = cars.get(index);
+
+        Assertions.assertEquals(String.format("%d", index), car.brand());
+        Assertions.assertEquals(index, car.number());
+    }
+
+    @DisplayName("Test exception on get at ")
+    @ParameterizedTest(name = "{0} of {1}")
+    @CsvSource({"0,0", "1,1", "-1,1", "11,11"})
+    void testGetAtException(int index, int count)
+    {
+        CarList cars = createCars(count);
+
+        Assertions.assertThrows(
+            IndexOutOfBoundsException.class, () -> cars.get(index)
+        );
+    }
+
+    @DisplayName("Test size on remove at ")
+    @ParameterizedTest(name = "{0} of {1}")
+    @CsvSource({"0,1", "0,11", "1,11", "10,11"})
+    void testSizeOnRemoveAt(int index, int count)
+    {
+        CarList cars = createCars(count);
+
+        Assertions.assertTrue(cars.removeAt(index));
+        Assertions.assertEquals(count - 1, cars.size());
+    }
+
+    @DisplayName("Test exception on remove at ")
+    @ParameterizedTest(name = "{0} of {1}")
+    @CsvSource({"0,0", "1,1", "-1,1", "11,11"})
+    void testRemoveAtException(int index, int count)
+    {
+        CarList cars = createCars(count);
+
+        Assertions.assertThrows(
+            IndexOutOfBoundsException.class, () -> cars.removeAt(index)
+        );
+    }
+
+    @DisplayName("Test remove of car ")
+    @ParameterizedTest(name = "\"{0}\" of {1}")
+    @CsvSource({"0,1", "0,11", "1,11", "10,11"})
+    void testRemove(int index, int count)
+    {
+        CarList cars = createCars(count);
+        Car car = cars.get(index);
+
+        Assertions.assertTrue(cars.remove(car));
+        Assertions.assertEquals(count - 1, cars.size());
+
+        Assertions.assertFalse(cars.remove(car));
+        Assertions.assertEquals(count - 1, cars.size());
+    }
+
+    @DisplayName("Test remove of not added car ")
+    @ParameterizedTest(name = "\"{0}\" of {1}")
+    @CsvSource({"0,0", "1,1", "11,11"})
+    void testSizeOnNotRemove(int index, int count)
+    {
+        CarList cars = createCars(count);
+        Car car = new TCar(index);
+
+        Assertions.assertFalse(cars.remove(car));
+        Assertions.assertEquals(count, cars.size());
+    }
+
+    @DisplayName("Test size on clear of ")
+    @ParameterizedTest(name = "{0}")
+    @CsvSource({"0", "1", "11"})
+    void testSizeOnClear(int count)
+    {
+        CarList cars = createCars(count);
+
+        cars.clear();
+        Assertions.assertEquals(0, cars.size());
+    }
+}
