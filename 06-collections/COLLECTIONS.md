@@ -67,3 +67,22 @@ The time complexity of operation of an array:
 
   But for implementations that multiplies the capacily of the array if no free space
   left it is *O(log n)* in average.
+
+### LinkedList
+
+A linked list keeps data on nodes where the list refers to the first
+node and each node refers to the next one:
+
+- To retrive the i-th node from the current one move to the next node
+  i times.
+
+- To add an element after a specific position of a list create a new
+  node, refer it to the nodes after the position and update the reference
+  of the node at the position to refer the new node.
+
+In double linked lists each node refers to the previous one also.
+
+Solve the following car park issue:
+
+- Provide a class LinkedCarList to implement the interface CarList on
+  a doubly linked list.
