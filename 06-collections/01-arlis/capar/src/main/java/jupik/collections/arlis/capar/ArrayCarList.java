@@ -9,37 +9,73 @@ public class ArrayCarList implements CarList
     protected Car []cars;
     protected int size;
 
-    public ArrayCarList()
+    protected void initialise()
     {
         cars = new Car[INITIAL_SIZE];
         size = 0;
     }
 
-    @Override
-    public void add(Car car)
+    protected void prepareForAddition()
     {
         if (size == cars.length)
         {
             cars = Arrays.copyOf(cars, size * 2);
         }
+    }
 
+    protected void validateIndex(int last, int index)
+    {
+        if (index < 0 || index >= last)
+        {
+            throw new IndexOutOfBoundsException();
+        }
+    }
+
+    protected int indexOf(Car car)
+    {
+        if (car == null) {
+            for (int i = 0; i < size; ++i)
+            {
+                if (cars[i] == null)
+                {
+                    return i;
+                }
+            }
+        } else {
+            for (int i = 0; i < size; ++i)
+            {
+                if (cars[i].equals(car))
+                {
+                    return i;
+                }
+            }
+        }
+
+        return -1;
+    }
+
+    public ArrayCarList()
+    {
+        initialise();
+    }
+
+    @Override
+    public void add(Car car)
+    {
+        prepareForAddition();
         cars[size++] = car;
     }
 
     @Override
     public void clear()
     {
-        cars = new Car[INITIAL_SIZE];
-        size = 0;
+        initialise();
     }
 
     @Override
     public Car get(int index)
     {
-        if (index < 0 || index >= size)
-        {
-            throw new IndexOutOfBoundsException();
-        }
+        validateIndex(size, index);
 
         return cars[index];
     }
@@ -47,10 +83,7 @@ public class ArrayCarList implements CarList
     @Override
     public boolean removeAt(int index)
     {
-        if (index < 0 || index >= size)
-        {
-            throw new IndexOutOfBoundsException();
-        }
+        validateIndex(size, index);
 
         cars[index] = null;
         --size;
@@ -63,25 +96,11 @@ public class ArrayCarList implements CarList
     @Override
     public boolean remove(Car car)
     {
-        if (car == null)
+        int index = indexOf(car);
+
+        if (index != -1)
         {
-            for (int i = 0; i < size; ++i)
-            {
-                if (cars[i] == null)
-                {
-                    return removeAt(i);
-                }
-            }
-        }
-        else
-        {
-            for (int i = 0; i < size; ++i)
-            {
-                if (cars[i].equals(car))
-                {
-                    return removeAt(i);
-                }
-            }
+            return removeAt(index);
         }
 
         return false;
