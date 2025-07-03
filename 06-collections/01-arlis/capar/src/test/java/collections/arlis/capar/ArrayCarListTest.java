@@ -44,14 +44,19 @@ public class ArrayCarListTest
         }
     }
 
+    void addCars(CarList cars, int index, int count)
+    {
+        for (int i = index; i < index + count; ++i)
+        {
+            cars.add(new TCar(i));
+        }
+    }
+
     CarList createCars(int count)
     {
         CarList cars = new ArrayCarList();
 
-        for (int i = 0; i < count; ++i)
-        {
-            cars.add(new TCar(i));
-        }
+        addCars(cars, 0, count);
 
         return cars;
     }
@@ -149,5 +154,23 @@ public class ArrayCarListTest
 
         cars.clear();
         Assertions.assertEquals(0, cars.size());
+    }
+
+    @DisplayName("Test removal of a NULL")
+    @ParameterizedTest(name = " at {0} from {1}")
+    @CsvSource({"0,2", "5,11", "9,11"})
+    void testRemovalOfNull(int index, int count)
+    {
+        CarList cars = createCars(index);
+
+        cars.add(null);
+        addCars(cars, index + 1, count - index - 1);
+
+        Assertions.assertEquals(count, cars.size());
+        Assertions.assertEquals(null, cars.get(index));
+
+        Assertions.assertTrue(cars.remove(null));
+        Assertions.assertEquals(count - 1, cars.size());
+        Assertions.assertNotEquals(null, cars.get(index));
     }
 }

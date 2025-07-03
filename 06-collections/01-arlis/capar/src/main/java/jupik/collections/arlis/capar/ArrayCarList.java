@@ -63,11 +63,24 @@ public class ArrayCarList implements CarList
     @Override
     public boolean remove(Car car)
     {
-        for (int i = 0; i < size; ++i)
+        if (car == null)
         {
-            if (cars[i].equals(car))
+            for (int i = 0; i < size; ++i)
             {
-                return removeAt(i);
+                if (cars[i] == null)
+                {
+                    return removeAt(i);
+                }
+            }
+        }
+        else
+        {
+            for (int i = 0; i < size; ++i)
+            {
+                if (cars[i].equals(car))
+                {
+                    return removeAt(i);
+                }
             }
         }
 
