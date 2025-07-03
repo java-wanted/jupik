@@ -86,3 +86,42 @@ Solve the following car park issue:
 
 - Provide a class LinkedCarList to implement the interface CarList on
   a doubly linked list.
+
+### Interview about List
+
+There are ArrayList and LinkedList in Java Standard Library.
+
+Answer the following questiong:
+
+- What is the difference between ArrayList and LinkedList?
+
+  The answer that ArrayList could be based on an array and LinkedList could
+  be based on a linked structure seams to be reasonable.
+
+- What is the time complexity to retrive an element by index for ArrayList
+  and for LinkedList?
+
+  The answer that it is O(1) for the former and O(n) for the later seams to be
+  reasonable. Although, the way the elements of a list are arranged internally
+  is implementation and architecture dependent.
+
+- What is the time complexity to remove an element by index for ArrayList
+  and for LinkedList?
+
+  The answer that it is O(n) for the formaer and O(1) for the later seams to be
+  wrong. Indeed, the term index assume random access not a serial one.
+
+- What are cases when it is reasonable to use LinkedList instead of ArrayList?
+
+  The answer that it has sence when it is expected to insert elements into the head
+  or into the middle of the list or remove them frequently seams to be naive. Actually,
+  to use an array is required if it has relatively small size or the random access is
+  strongly required.
+
+- What problems could happen if huge ammount of elements are inserted and removed
+  from ArrayList for a significant time?
+
+  The answer that ArrayList could hold a great ammount of memory seams to be not
+  appropriate. Certainly, there must be strong requirements to use an array in the
+  such conditions that some redundancy does not matter. In either case, ArrayList
+  provides operation to release resource if not used.
