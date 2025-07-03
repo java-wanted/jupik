@@ -75,5 +75,6 @@
 
     <modules>
         <module>01-arlis</module>
+        <module>02-arlit</module>
     </modules>
 </project>

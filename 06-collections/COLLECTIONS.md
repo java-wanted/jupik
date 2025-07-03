@@ -40,3 +40,30 @@ For this case it means that an interface MUST BE used to declare a list of cars.
 
 There is a conception of the Test Drive Development, TDD. It means that the tests
 MUST BE written before an implementation.
+
+### ArrayList 2
+
+Extend operations of the list of cars from the topic above with a new operation
+add:
+
+- The operation MUST accept a car and an index parameters and insert the car
+  to be placed into the list at the given index
+
+- Tests against insertions into the middle, head and tail MUST BE provided
+
+There is a conception of time complexity of an algorithm. For example:
+
+- The notation *O(1)* means that the time of an operation does not depend
+  on the size of data to be processed
+
+- The notation *O(n)* means that the time of an operation is in linear
+  dependence of the size of data
+
+The time complexity of operation of an array:
+
+- To get an element by index - *O(1)*
+
+- To add an element into an array or to remove it from - *O(n)*
+
+  But for implementations that multiplies the capacily of the array if no free space
+  left it is *O(log n)* in average.
