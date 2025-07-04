@@ -55,6 +55,30 @@ public class LinkedCarListTest
         }
     }
 
+    void removeCars(CarList cars, int index, int count)
+    {
+        for (int i = index + count; i > index; --i)
+        {
+            cars.removeAt(i - 1);
+        }
+    }
+
+    void addCarsAt(CarList cars, int index, int count)
+    {
+        for (int i = index; i < index + count; ++i)
+        {
+            cars.add(new TCar(i), index);
+        }
+    }
+
+    void removeCarsAt(CarList cars, int index, int count)
+    {
+        while (count-- > 0)
+        {
+            cars.removeAt(index);
+        }
+    }
+
     CarList createCars(int count)
     {
         CarList cars = new LinkedCarList();
@@ -201,5 +225,39 @@ public class LinkedCarListTest
             IndexOutOfBoundsException.class,
             () -> cars.add(new TCar(count + 1), index)
         );
+    }
+
+    @DisplayName("Test repeate addition and removal")
+    @ParameterizedTest(name = " of {0} {1} times")
+    @CsvSource({"1,2", "11,2"})
+    void testAddThenRemov(int count, int retry)
+    {
+        CarList cars = createCars(0);
+
+        for (int i = 0; i < retry; ++i)
+        {
+            addCars(cars, 0, count);
+            Assertions.assertEquals(0, cars.get(0).number());
+            Assertions.assertEquals(count - 1, cars.get(count - 1).number());
+            removeCars(cars, 0, count);
+            Assertions.assertEquals(0, cars.size());
+        }
+    }
+
+    @DisplayName("Test repeate addition and removal at head")
+    @ParameterizedTest(name = " of {0} {1} times")
+    @CsvSource({"1,2", "11,2"})
+    void testAddThenRemoveHead(int count, int retry)
+    {
+        CarList cars = createCars(0);
+
+        for (int i = 0; i < retry; ++i)
+        {
+            addCarsAt(cars, 0, count);
+            Assertions.assertEquals(count - 1, cars.get(0).number());
+            Assertions.assertEquals(0, cars.get(count - 1).number());
+            removeCarsAt(cars, 0, count);
+            Assertions.assertEquals(0, cars.size());
+        }
     }
 }
