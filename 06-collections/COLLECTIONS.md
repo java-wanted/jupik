@@ -125,3 +125,33 @@ Answer the following questiong:
   appropriate. Certainly, there must be strong requirements to use an array in the
   such conditions that some redundancy does not matter. In either case, ArrayList
   provides operation to release resource if not used.
+
+### Memory organisztion
+
+There are two kinds of memory in Java:
+
+- The stack. It is one mega byte long
+
+- The heap. It is limited by the size of RAM
+
+Variables could be kept on the stack:
+
+- The variables of primitive types keep data on the stack
+
+- The variables of reference types keep only references onto the data
+
+  The data of reference types are kept on the heap.
+
+The operator of equality, the sign *==*, compares data in the stack. So that,
+the operatior:
+
+- compares that a pair of variables are equal for primitive types
+
+- compares that a pair of variables refer the same instance for reference
+  types
+
+  So that, the operator return true for variables of reference types iff they
+  are null or refer to the same instance.
+
+If there are no references on an instance from the stack the instance could be
+removed by Java Grabage collector.
