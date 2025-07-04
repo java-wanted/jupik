@@ -155,3 +155,38 @@ the operatior:
 
 If there are no references on an instance from the stack the instance could be
 removed by Java Grabage collector.
+
+### Equals and hashcode
+
+There is the operation *equals* at the class Object. This operation uses the
+operator of equality to check equality of the current instance against an
+other one. But it could be overrided to compare distinct variables of reference
+types in some other way.
+
+There is the operation *hashCode* at the class Object. If the operation
+*equals* returns true for a pair of objects the operation *hashCode* MUST return
+the same value for this objects also.
+
+Thus, if the operation *equals* is overriden the operation *hashCode* MUST BE
+overriden also.
+
+There are rules related to *equals* and *hashCode*:
+
+- If *equals* is overriden the *hashCode* MUST BE overrided also
+
+- If hash codes of objects are different than the objects are different also
+
+  But if hash codes are equals the related objects could be different.
+
+There are questions that could be asked on an interview:
+
+- How to fields compare two objects for equality of them fields?
+
+  An answer that it is possible to override *equals* seam to be reasonable
+  for some cases.
+
+- Why it is prohibited to compare reference types with the equality operator?
+
+  An answer that the only references are compared is right but it does not
+  answer to the question. Moreover, it is accepted to compare references in
+  the such way.

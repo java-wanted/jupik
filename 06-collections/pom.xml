@@ -78,5 +78,6 @@
         <module>02-arlit</module>
         <module>03-lilis</module>
         <module>05-memos</module>
+        <module>06-equas</module>
     </modules>
 </project>
