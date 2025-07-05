@@ -51,17 +51,26 @@ public class HashCarSetTest
     class TCarSet implements CarSet
     {
         Car []cars;
+        boolean nil;
         int size;
 
         TCarSet(int max)
         {
             cars = new Car[max];
+            nil = false;
             size = 0;
         }
 
         @Override
         public boolean add(Car car)
         {
+            if (car == null)
+            {
+                boolean pni = nil;
+                nil = true;
+                return !pni;
+            }
+
             int index = car.number();
 
             if (cars[index] != null)
@@ -77,6 +86,13 @@ public class HashCarSetTest
         @Override
         public boolean remove(Car car)
         {
+            if (car == null)
+            {
+                boolean pni = nil;
+                nil = false;
+                return pni;
+            }
+
             int index = car.number();
 
             if (cars[index] == null)
@@ -92,13 +108,14 @@ public class HashCarSetTest
         @Override
         public int size()
         {
-            return size;
+            return size + (nil ? 1 : 0);
         }
 
         @Override
         public void clear()
         {
             cars = new Car[cars.length];
+            nil = false;
             size = 0;
         }
     }
@@ -178,6 +195,47 @@ public class HashCarSetTest
         CarSet cars = createCars(first, last);
 
         Assertions.assertEquals(last - first, cars.size());
+        cars.clear();
+        Assertions.assertEquals(0, cars.size());
+        cars.clear();
+        Assertions.assertEquals(0, cars.size());
+    }
+
+    @DisplayName("Test NULL addition")
+    @ParameterizedTest(name = " of {0} to {1}")
+    @CsvSource({"0,1", "1,2", "0,10", "1,11"})
+    void testNullAddition(int first, int last)
+    {
+        CarSet cars = createCars(first, last);
+
+        Assertions.assertTrue(cars.add(null));
+        Assertions.assertEquals(last - first + 1, cars.size());
+        Assertions.assertFalse(cars.add(null));
+        Assertions.assertEquals(last - first + 1, cars.size());
+    }
+
+    @DisplayName("Test NULL removal")
+    @ParameterizedTest(name = " of {0} to {1}")
+    @CsvSource({"0,1", "1,2", "0,10", "1,11"})
+    void testNullRemoval(int first, int last)
+    {
+        CarSet cars = createCars(first, last);
+
+        Assertions.assertTrue(cars.add(null));
+        Assertions.assertTrue(cars.remove(null));
+        Assertions.assertEquals(last - first, cars.size());
+        Assertions.assertFalse(cars.remove(null));
+        Assertions.assertEquals(last - first, cars.size());
+    }
+
+    @DisplayName("Test NULL clear")
+    @ParameterizedTest(name = " of {0}..{1}")
+    @CsvSource({"0,1", "1,11"})
+    void testNullClear(int first, int last)
+    {
+        CarSet cars = createCars(first, last);
+
+        Assertions.assertTrue(cars.add(null));
         cars.clear();
         Assertions.assertEquals(0, cars.size());
         cars.clear();
