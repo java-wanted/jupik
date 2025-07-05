@@ -21,9 +21,19 @@
 
     <dependencies>
         <dependency>
-            <groupId>jupik.collections.arlis</groupId>
-            <artifactId>jupik-capar</artifactId>
+            <groupId>jupik.collections.arlit</groupId>
+            <artifactId>jupik-capas</artifactId>
             <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>jupik.collections.lilis</groupId>
+            <artifactId>jupik-capal</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
@@ -35,6 +45,16 @@
                     <compilerArgs>
                         <arg>-Xlint:all</arg>
                     </compilerArgs>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <reportFormat>plain</reportFormat>
+                    <consoleOutputReporter>
+                        <disable>true</disable>
+                    </consoleOutputReporter>
+                    <statelessTestsetInfoReporter implementation="org.apache.maven.plugin.surefire.extensions.junit5.JUnit5StatelessTestsetInfoTreeReporter"/>
                 </configuration>
             </plugin>
         </plugins>
