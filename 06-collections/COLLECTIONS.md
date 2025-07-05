@@ -190,3 +190,16 @@ There are questions that could be asked on an interview:
   An answer that the only references are compared is right but it does not
   answer to the question. Moreover, it is accepted to compare references in
   the such way.
+
+### HashSet
+
+It could be required to object to keep equal elements within a collection.
+There is an interface Set to fullfil such wishes in Java.
+
+Solve the following car park issue:
+
+- Declare an interface Set to manage a set of not equal cars with the following
+  operations: add, remove, size and clear.
+
+- Test it is not possible to add equal cars, Test it is possible to remove a car
+  if an equal exists.
