@@ -203,3 +203,16 @@ Solve the following car park issue:
 
 - Test it is not possible to add equal cars, Test it is possible to remove a car
   if an equal exists.
+
+It is possible to implement the hash set in the following way:
+
+- Provide an array of singly linked list, let N lists initially.
+
+- Keep an element in the i-th list, where i is the remainer of division of the hast
+  code of an element by N
+
+- Double the number of lists when the number of elements excceds some proportion
+  of N, the load factor, e.g. 0.75
+
+  If so, elements of the i-th list must be redistributed in accord with them new
+  positioin, either i-th or double i-th.

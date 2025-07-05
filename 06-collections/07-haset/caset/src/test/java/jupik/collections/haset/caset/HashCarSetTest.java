@@ -9,8 +9,6 @@ import org.junit.jupiter.api.DisplayName;
 
 public class HashCarSetTest
 {
-    static final int LAST_INDEX = 0x10;
-
     static class TCar implements Car
     {
         int index;
@@ -48,78 +46,6 @@ public class HashCarSetTest
         }
     }
 
-    class TCarSet implements CarSet
-    {
-        Car []cars;
-        boolean nil;
-        int size;
-
-        TCarSet(int max)
-        {
-            cars = new Car[max];
-            nil = false;
-            size = 0;
-        }
-
-        @Override
-        public boolean add(Car car)
-        {
-            if (car == null)
-            {
-                boolean pni = nil;
-                nil = true;
-                return !pni;
-            }
-
-            int index = car.number();
-
-            if (cars[index] != null)
-            {
-                return false;
-            } else {
-                cars[index] = car;
-                ++size;
-                return true;
-            }
-        }
-
-        @Override
-        public boolean remove(Car car)
-        {
-            if (car == null)
-            {
-                boolean pni = nil;
-                nil = false;
-                return pni;
-            }
-
-            int index = car.number();
-
-            if (cars[index] == null)
-            {
-                return false;
-            } else {
-                cars[index] = null;
-                --size;
-                return true;
-            }
-        }
-
-        @Override
-        public int size()
-        {
-            return size + (nil ? 1 : 0);
-        }
-
-        @Override
-        public void clear()
-        {
-            cars = new Car[cars.length];
-            nil = false;
-            size = 0;
-        }
-    }
-
     void addCars(CarSet cars, int first, int last)
     {
         for (int i = first; i < last; ++i)
@@ -154,7 +80,7 @@ public class HashCarSetTest
 
     CarSet createCars(int first, int last)
     {
-        CarSet cars = new TCarSet(LAST_INDEX);
+        CarSet cars = new HashCarSet();
 
         addCars(cars, first, last);
 
