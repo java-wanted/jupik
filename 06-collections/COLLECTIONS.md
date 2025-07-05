@@ -216,3 +216,28 @@ It is possible to implement the hash set in the following way:
 
   If so, elements of the i-th list must be redistributed in accord with them new
   positioin, either i-th or double i-th.
+
+### Collection
+
+There are some questions about collections above
+
+- Why operations to manage elements of HashSet with an index are not provided?
+
+- Is it granted that elements are kept in HashSet in the order they was added?
+
+- What does happen if the operation equals of the class Car is overrided but the
+  operation hashCode is not?
+
+- What does happen if the hash code will be constant, e.g. 1? What would the
+  behaviour the HashSet be?
+
+- Why has the new interace Set been declared? Why does not the HashSet implement
+  the interface List?
+
+There is an issue:
+
+- There are similar operations in both List and Set interfaces: add, remove, clear
+  and size
+
+- Move this operation into the new interface Collection and extend List and Set from
+  it.

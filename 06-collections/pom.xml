@@ -80,5 +80,6 @@
         <module>05-memos</module>
         <module>06-equas</module>
         <module>07-haset</module>
+        <module>08-cols</module>
     </modules>
 </project>
