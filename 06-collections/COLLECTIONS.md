@@ -241,3 +241,16 @@ There is an issue:
 
 - Move this operation into the new interface Collection and extend List and Set from
   it.
+
+The Hierarchy of collection in Java:
+
+- Collection - List, Set
+
+- List - ArrayList, LinkedList
+
+- Set - HashSet, TreeSet
+
+Solve the following collectioin issue:
+
+- Extend the interface CarCollection with the operation contains that returns
+  true iff a car belongs to a car collection.

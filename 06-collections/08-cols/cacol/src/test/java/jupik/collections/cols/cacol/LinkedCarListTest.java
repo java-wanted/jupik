@@ -194,4 +194,24 @@ public class LinkedCarListTest
         Assertions.assertEquals(size, cars.size());
         Assertions.assertNotEquals(null, cars.get(size - 1));
     }
+
+    @DisplayName("Test contains")
+    @Test
+    void testContains()
+    {
+        int size = cars.size();
+
+        Assertions.assertTrue(cars.contains(new ICar(size - 1)));
+        Assertions.assertFalse(cars.contains(new ICar(size)));
+    }
+
+    @DisplayName("Test contains NULL")
+    @Test
+    void testContainsNull()
+    {
+        Assertions.assertTrue(cars.add(null));
+        Assertions.assertTrue(cars.contains(null));
+        Assertions.assertTrue(cars.remove(null));
+        Assertions.assertFalse(cars.contains(null));
+    }
 }

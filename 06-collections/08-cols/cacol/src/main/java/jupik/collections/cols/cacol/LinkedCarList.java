@@ -1,14 +1,15 @@
 package jupik.collections.cols.cacol;
 
 import jupik.collections.arlis.capar.Car;
+import jupik.collections.cols.cacol.impl.LinkedCarListImpl;
 
 public class LinkedCarList implements CarList
 {
-    protected jupik.collections.arlit.capas.CarList impl;
+    protected LinkedCarListImpl impl;
 
     protected LinkedCarList()
     {
-        impl = new jupik.collections.lilis.capal.LinkedCarList();
+        impl = new LinkedCarListImpl();
     }
 
     @Override
@@ -29,6 +30,12 @@ public class LinkedCarList implements CarList
     public void clear()
     {
         impl.clear();
+    }
+
+    @Override
+    public boolean contains(Car car)
+    {
+        return impl.contains(car);
     }
 
     @Override

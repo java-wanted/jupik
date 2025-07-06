@@ -1,14 +1,15 @@
 package jupik.collections.cols.cacol;
 
 import jupik.collections.arlis.capar.Car;
+import jupik.collections.cols.cacol.impl.ArrayCarListImpl;
 
 public class ArrayCarList implements CarList
 {
-    protected jupik.collections.arlit.capas.CarList impl;
+    protected ArrayCarListImpl impl;
 
     protected ArrayCarList()
     {
-        impl = new jupik.collections.arlit.capas.ArrayCarList();
+        impl = new ArrayCarListImpl();
     }
 
     @Override
@@ -29,6 +30,12 @@ public class ArrayCarList implements CarList
     public void clear()
     {
         impl.clear();
+    }
+
+    @Override
+    public boolean contains(Car car)
+    {
+        return impl.contains(car);
     }
 
     @Override
