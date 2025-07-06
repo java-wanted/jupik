@@ -1,14 +1,15 @@
 package jupik.collections.cols.cacol;
 
 import jupik.collections.arlis.capar.Car;
+import jupik.collections.cols.cacol.impl.HashCarSetImpl;
 
 public class HashCarSet implements CarSet
 {
-    protected jupik.collections.haset.caset.CarSet impl;
+    protected HashCarSetImpl impl;
 
     protected HashCarSet()
     {
-        impl = new jupik.collections.haset.caset.HashCarSet();
+        impl = new HashCarSetImpl();
     }
 
     @Override
@@ -21,6 +22,12 @@ public class HashCarSet implements CarSet
     public void clear()
     {
         impl.clear();
+    }
+
+    @Override
+    public boolean contains(Car car)
+    {
+        return impl.contains(car);
     }
 
     @Override
