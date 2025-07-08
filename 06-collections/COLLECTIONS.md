@@ -330,3 +330,30 @@ Answer the following questions:
 
 - What does happen if a type with hash code different for equal objects are used in
   HashSet?
+
+### TreeSet
+
+In the course it is stated that it is not REQUIRED to have the ability
+to implement trees for Junior Plus Java Programmer.
+
+Let there are the follwoing requirements:
+
+- Keep cars to be ordered by names of brands
+
+- Reject to keep equals cars also
+
+To comform this requirements in an efficient way the collection TreeSet
+is preferable. All operations on TreeSet have time complexity equals to
+O(log N).
+
+To place elements into TreeSet an operation to compare elements MUST BE
+provided. If so, either elements MUST implement the interface Comparable
+or an implementation of the interface Comparator MUST be provided to an
+instance of the TreeSet on the constraction.
+
+Solve the follwoing enumeration problem:
+
+- Generate a sequence of one hundred of random numbers in the range from
+  0 up to 10 exclusivly.
+
+- Use TreeSet to sort this number in the reverse order.

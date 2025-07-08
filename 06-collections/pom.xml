@@ -82,5 +82,6 @@
         <module>07-haset</module>
         <module>08-cols</module>
         <module>09-ites</module>
+        <module>11-tsets</module>
     </modules>
 </project>
