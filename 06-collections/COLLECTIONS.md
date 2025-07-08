@@ -254,3 +254,20 @@ Solve the following collectioin issue:
 
 - Extend the interface CarCollection with the operation contains that returns
   true iff a car belongs to a car collection.
+
+### Iterable
+
+There is a cycle *for each* to iterate over elements of a collection. To support it
+a collection MUST implement the interface Iterable. Actually, the interface
+Collection of Java Standard Library is inherited from the interface Iterable.
+
+The interface Iterable MUST implement the operation iterator. This operation
+MUST return an instance of the Iterator interface, for which the operatioins
+*hasNext* and *next* MUST BE implemented.
+
+Solve the followin issue:
+
+- Inherit the interface CarCollecitons from the interface Iterable.
+
+- Provide tests for *for each* and implement the Interface Iterable in car
+  collections.

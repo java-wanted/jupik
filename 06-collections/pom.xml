@@ -81,5 +81,6 @@
         <module>06-equas</module>
         <module>07-haset</module>
         <module>08-cols</module>
+        <module>09-ites</module>
     </modules>
 </project>
