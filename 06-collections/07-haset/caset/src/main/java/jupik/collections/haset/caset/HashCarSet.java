@@ -68,7 +68,7 @@ public class HashCarSet implements CarSet
                 int idx = binIndex(temp, n.car);
 
                 n.next = temp[idx];
-                temp[idx] = n.next;
+                temp[idx] = n;
             }
         }
 

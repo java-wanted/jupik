@@ -89,7 +89,7 @@ public class HashCarSetTest
 
     @DisplayName("Test addition")
     @ParameterizedTest(name = " of {0} to {1}")
-    @CsvSource({"0,1", "1,2", "0,10", "1,11"})
+    @CsvSource({"0,1", "1,2", "1,11", "0,34"})
     void testAddition(int first, int last)
     {
         CarSet cars = createCars(first, last);
