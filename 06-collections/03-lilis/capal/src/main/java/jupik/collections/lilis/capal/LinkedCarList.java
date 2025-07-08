@@ -8,9 +8,9 @@ public class LinkedCarList implements CarList
 {
     protected static class Node
     {
-        protected Node prev;
-        protected Node next;
-        protected Car car;
+        public Node prev;
+        public Node next;
+        public Car car;
 
         protected Node(Car car)
         {
