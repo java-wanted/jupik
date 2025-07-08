@@ -11,10 +11,10 @@ public class HashCarSet implements CarSet
 
     protected class Node
     {
-        Node next;
-        Car car;
+        public Node next;
+        public Car car;
 
-        Node(Node next, Car car)
+        public Node(Node next, Car car)
         {
             this.next = next;
             this.car = car;
