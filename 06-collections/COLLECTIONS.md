@@ -271,3 +271,62 @@ Solve the followin issue:
 
 - Provide tests for *for each* and implement the Interface Iterable in car
   collections.
+
+### Interview about list and set
+
+Answer the following questions:
+
+- Draw the hierarchy of the Java Collection framework out.
+
+- What is the difference of the interface Set from the interface List?
+
+  The answer that the interface Set could not keep equals elements is wrong.
+  Acutally, it is about an implementation but not about the interface.
+
+- What is the diference of the classes ArrayLists and LinkedList?
+
+- What is the time complexity of the followin operations on ArrayList,
+  LinkedList and HashSet?
+
+  - add an element
+
+    The answer that it is O(1) for ArrayList is wrong. Actually, it is expected
+    that access to each element MUST BE O(1).
+
+  - add an element at a specific index
+
+    The answer that it is O(1) for LinkedList is wrong. Actually, addition of an
+    element at a specific index at O(1) assumes the random access is implemented.
+
+  - remove and element at a specific index
+
+    The same.
+
+  - contains
+
+- Could you porovide some cases when it is preffered to use ArrayList, LinkedList
+  or HashSet?
+
+  The answer that HashSet is REQUIRED if a collection MUST NOT contains equal
+  elements is wrong. There is not problem to bypass this limitaion.
+
+  The answer that ArrayList is preffered to add elements into the tail is also
+  wrong. In this case either a linked list or an assotiative array are better.
+
+- How are memory of Java orginised?
+
+  The answer that *primitives* and "references to objects" are kept in the stack
+  is wrong. Actually, an instance of a reference type could contains variables
+  both of primitive and reference types in its data, not only to use *temps*.
+
+- Could the garbage collector to destroy objects that refers by each to other only?
+
+  The answer that it could seams to be right for now. But there could be problems
+  for older versions.
+
+- Could yout list rules for operations equals and hashcode?
+
+- For what is the operation hashcode required?
+
+- What does happen if a type with hash code different for equal objects are used in
+  HashSet?
