@@ -357,3 +357,20 @@ Solve the follwoing enumeration problem:
   0 up to 10 exclusivly.
 
 - Use TreeSet to sort this number in the reverse order.
+
+### HashMap
+
+There are the following requirements:
+
+- Keep predicate that somebody owns a car, one owner owns one car at a time
+
+- Provide operation to add a such owner and its car, to get a car of an owner,
+  to get a set of car owners, to get a set of cars, to remove an owner and her
+  car
+
+- The addition, removal and retrival of a car by its owner at O(1) in average
+
+- Implement the collection based on a hash set.
+
+There is a type that implements such collection in the Standdard Java Library,
+namely, the type Map.

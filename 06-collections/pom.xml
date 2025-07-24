@@ -83,5 +83,6 @@
         <module>08-cols</module>
         <module>09-ites</module>
         <module>11-tsets</module>
+        <module>12-hamap</module>
     </modules>
 </project>
