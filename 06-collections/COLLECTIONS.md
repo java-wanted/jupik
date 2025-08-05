@@ -434,3 +434,29 @@ if some limit is is exeeded.
 
 - What happens if there is an element in the HashMap and a new element with the
   same key is added?
+
+### Interview about implementation Set and Map
+
+There is a list of implementation of interfaces Set and Map that MUST BE remembered
+to be hired on a position of a Junior Java Plus Programmer:
+
+- HashSet, TreeSet and LinkedHashSet implement Set
+
+- HashMap, TreeMap and LinkedHashMap implement Map
+
+The collections LinkedHashSet and LinkedHashMap allows to iterate elements in the order
+they have been added into the collection.
+
+Answer the follwoing question:
+
+- Let a value is added to an implementation of HashMap by a instance of a key. Let this
+  instance of a key has been modified so that its hash code changed. Is it possible
+  to retrive a value by this key?
+
+  Indeed, it is not possible to create a copy of an instance in Java in general. And
+  the HashMap keeps key instances by reference. And it does not checks that a key has
+  been modified.
+
+On an interview the question could be asked as the following:
+
+- When an element of the HashMap could be lost?
