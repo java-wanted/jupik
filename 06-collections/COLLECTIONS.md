@@ -374,3 +374,63 @@ There are the following requirements:
 
 There is a type that implements such collection in the Standdard Java Library,
 namely, the type Map.
+
+### Interview about HashMap
+
+Answer the following questions:
+
+- What is the interface Map?
+
+The answer that it is a collections of pairs key-value is not wrong.
+But it does not mention that it is an associative array at the first.
+
+- What are the main operations on the interface Map?
+
+Just to list all operations is not good answer. Actually, the main
+operations are to to add an element and to retrive it.
+
+- Is the interface Map in the hierarchy of collections?
+
+The answer that it does not would be right if it would be asked whether
+the Map belongs to the hierarchy of the Collection interfaces. But it is
+asked about some collections.
+
+- Why the interface Map is not a subclass of the Collection interface?
+
+It is reasonable to compare the difference of *add* and *put*. Indeed,
+the interface Collection is mentioned. But the right answer is that an
+interface could not be a *subclass* at all.
+
+- How the type HasmMap is implemented?
+
+It is wrong to describe some implementation. The right answer is just to say
+what the hash map is in general: an array of chanks of elements with equal
+hash code.
+
+- What is the collision and how they are solved in the HashMap?
+
+It is wrong to mention a linked list or a field next. The right answer is
+just to say what is the has map in general and to mention that the collision
+is a situation when few elements has the same hash code and so must be
+kept in the same chank.
+
+- What is the time complexily of operations on the type HashMap?
+
+It is right to answer that accessing of an element of a hash map could have
+the time complexity *O(n)* in general. And it is not wrong to notice that it could
+have the complexity *O(log n)* in a case of a particular implementation. But then it
+must be mentioned that it is not a hash map anymore. Indeed, if it is acceptable that
+accessing of an element has the complexity *O(log n)* than just use a tree
+implementation. Otherwise, if the complexity must be *O(1)* drom elements of a chank
+if some limit is is exeeded.
+
+- How to retrieve all keys of a HashMap collection?
+
+- How to retrieve all values of a HashMap collection?
+
+- Is is granged that elements of a HashMap are ordered?
+
+  It seams to be reasonable to refer to an implementation of a hash map.
+
+- What happens if there is an element in the HashMap and a new element with the
+  same key is added?
