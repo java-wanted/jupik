@@ -84,5 +84,6 @@
         <module>09-ites</module>
         <module>11-tsets</module>
         <module>12-hamap</module>
+        <module>15-queue</module>
     </modules>
 </project>

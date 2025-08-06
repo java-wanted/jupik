@@ -515,3 +515,13 @@ There are operation of the interface Queue:
 - *peek* get the first element of the queue
 
 - *poll* extract the first element form the queue
+
+Solve the following car park issue:
+
+- Declare an interface CarQueue to extend the interface CarCollection and to
+  declare operations of a FIFO queue on elements of the type Car
+
+- Extend the type LinkedCarList to implement the interface CarQueue
+
+  Return NULL if *peek* is called on an empty queue. Rise the exception
+  *IndexOutOfBoundsException* on *poll* in the such case.
