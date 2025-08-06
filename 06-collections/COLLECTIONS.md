@@ -460,3 +460,58 @@ Answer the follwoing question:
 On an interview the question could be asked as the following:
 
 - When an element of the HashMap could be lost?
+
+### Queue
+
+There is the hierarchy of collections in Java as stidied:
+![](assets/collections.svg)
+<!--
+```plantuml
+@startuml assets/collections
+interface Iterable
+interface Collection
+interface Set
+class HashSet
+class TreeSet
+class LinkedHashSet
+interface List
+Iterable <|-- Collection
+Collection <|-- Set
+Collection <|-- List
+Set <|.. HashSet
+Set <|.. TreeSet
+Set <|.. LinkedHashSet
+List <|.. ArrayList
+List <|.. LinkedList
+interface Map
+class HashMap
+class TreeMap
+class LinkedHashMap
+Map <|.. HashMap
+Map <|.. TreeMap
+Map <|.. LinkedHashMap
+@enduml
+```
+-->
+
+There is the interface Queue also. It extends the Collection.
+
+There are two ways to process elements of queues:
+
+- Last In First Out (LIFO)
+
+  It means that an element put into a queue after all others will be retrived
+  first. The such queues are called stacks in Java.
+
+- First In First Out (FIFO)
+
+  It means that an element put into a queue before all other will be retrived
+  last. The such queues are called queues in Java.
+
+There are operation of the interface Queue:
+
+- *add* place an element to the tail of the queue
+
+- *peek* get the first element of the queue
+
+- *poll* extract the first element form the queue
