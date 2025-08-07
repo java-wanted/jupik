@@ -1,4 +1,4 @@
-## COLLECTIONS
+## 6 COLLECTIONS
 
 ### ArrayList
 
