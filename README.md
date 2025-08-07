@@ -14,6 +14,22 @@ The completion of the course is verified by a certificate provided by
 [Stepik][1]. Beside it it is valuable to confirm the completion with a text
 that demonstrates materials studied, a so called *Portfelia*.
 
+## CONTENT
+
+There are topics of the course:
+
+- [Intorduction](01-intro/INTRO.md)
+
+- [Syntax](02-syntax/SYNTAX.md)
+
+- [OOP](03-oop/OOP.md)
+
+- [Advanced Level](04-advance/ADVANCE.md)
+
+- [Second Level](05-level2/LEVEL2.md)
+
+- [Collection Framwork](06-collections/COLLECTIONS.md)
+
 ## DISCLAIMER
 
 The text provided is typed by me to solve or to prepare to solve the issues of
