@@ -525,3 +525,140 @@ Solve the following car park issue:
 
   Return NULL if *peek* is called on an empty queue. Rise the exception
   *IndexOutOfBoundsException* on *poll* in the such case.
+
+### Interwiew about Collections
+
+The following question MUST BE answered to pass interview
+about Java Collection Framework:
+
+- Describe the hierarchy of the Java Collections Framework.
+
+- What is the differenes of types LinkedList and ArrayList?
+
+  To answer that the later is based on an array and the former
+  is based on a linked structure is not correct. It MUST BE
+  answered that the former MUST grant the time complexity *O(1)*
+  to add an element at the head or at the tail of the collection
+  and to accees the previous and the next element to a current
+  one. And the later MUST grant the time complexity *O(1)* to
+  access an i-th element of the collection.
+
+- What are cases when it is right to use LinkedList and what are
+  cases when it is right to use ArrayList?
+
+  To answer that LinkedList MUST BE used when it is required
+  to add elements at the tail and at the head frequently is not correct.
+  And to answer that the ArrayList is usually could be used instead
+  usual array is wrong. Instead, the time complexity MUST BE taken into
+  account. Namely, ArrayList MUST BE used if it is strongly required
+  to provide a random access to elements of a collections. Especially
+  if the number of element in the collection is limited. Otherwise,
+  LinkedList MUST BE preffered. Take into account that ArrayList keeps
+  referencies and data are not kept in lines of the CPU cache.
+
+- What are differencies of collections List and Set?
+
+  To answer that it is not possible to keep repeated elements in Set
+  is just wrong. And the answer that there are not operations in Set
+  to access an element by its index is not correct. Instead, it MUST
+  BE answered that the List describes an ordered set of elements
+  but sets describes an unordered one.
+
+- There is no operation get in Set. How to print all elements of a Set
+  onto a terminal?
+
+- List main implementations of the collection Set. What are their
+  differences?
+
+  It is wrong to answer that elements of HashSet are kept without an
+  order. And it is not correct to answer that elements of TreeSet are
+  kept sorted. The same way it is wrong that elements of a LinkedHashSet
+  are kept in the order they have been added. Actually, the above is about
+  the order the elements could be traversed with the Iterator.
+
+  At the first there are two main implementations only, TreeSet and HashSet.
+  A search tree is used to keep elements in the former. And an array indexed
+  by hash codes of elements are used in the later. So that, the former
+  grants the time complexity *O(log n)* to access any element in average and
+  the later could provide the time complexity *O(1)* to access any elements
+  in some cases.
+
+- Let there is a class User with the only field of the type String. How
+  instances of this class would be ordered by TreeSet.
+
+- What are operations *equals* and *hashCode*? What are they purporse?
+
+  It is wrong answer that the operation equals is intended to compare
+  instances againts values of their fields. And it is wrong to answer that
+  hashCode return a numeric implementation of an instance. Indeed, there is
+  no mapping from a hash code to an instance.
+
+  The right answer is that the operation equals allows to implement
+  comparison of some objects in a required way. And the operation hashCode
+  is a functional that provides a numberic characteristics of an object.
+
+- What are rules for operations *equals* and *hashCode*?
+
+  It is not correct to list that if equals implemented than hashCode must be
+  implemented also, that if hash codes different objects must not be equal.
+  The right answer is that some collections rellies that equals returns
+  True, the related objects MUST HAVE equal hash codes.
+
+- What is intention of the collection Map?
+
+  It is not correct to answer that Map intended to keep key-value pairs of
+  objects. The right answer is that the Map is an assoative arrays, i.e.
+  it maps a set of objects, keys, to an other set of objects, values.
+
+- Is it possible that to equals keys or to equals values are kept in a Map?
+
+  It is just not correct to answer that there could not be two equals keys
+  in a Map. The right answer is that set of keys is an unordered set. If so,
+  it has no meaning to ask about equal keys at all.
+
+- How is HashMap organased?
+
+  It is wrong to list that an array of sixteen elements is created and so on.
+  Also, the implementations could be different. The right answer is that
+  the word hash means that elements are kept in an array indexed by their
+  hash codes. Although, it is not bad to notice that a set of elements has
+  equals hash codes an other data structure is used to keep them within
+  the related element, bin, of the array.
+
+- How are collisions are solved in HashMap?
+
+  It is not very correct to describe an implementation of HashMap
+  unconditionally, Probably, it is right to answer that elements with equal
+  hash codes are kept in an other data structure. And just notice that
+  a linked list or a search tree are used in the openjdk one.
+
+- How an element could be lost in HashMap?
+
+  It is wrong to answer that it happens if hash code of an element would
+  be modified. The right answer is that it is not possible except some
+  critical system error or a bug in an implementation. But it is not bad
+  to mention that an element of a coullection could be not accessable if
+  its hash code will be modified.
+
+- How is HashSet organased?
+
+  It is not correct to answer that a HashSet is based on a HashMap. The right
+  answer is that elements of a HashSet are kept in an array indexed by their
+  hash codes.
+
+- What are the time complexitly of operations on ArrayList, LinkedList,
+  HashSet, TreeSet and HashMap?
+
+  It is just wrong that to insert or to delete an element from a specific
+  position of a LinkedList has the complexity *O(1)*. Actually, *O(1)* is
+  granted to access an element of the current position only.
+
+  It is wrong that insertion of an element at the tail of an ArrayList
+  has the complexity *O(1)*. ArrayList MUST grant *O(1)* to access an
+  element of the collection. So that, addition element at its tail requires
+  *O(log n)* in average. And it is wrong to answer that addition of an
+  element into HashSet and HashMap has the complexity *O(1)* also. Take
+  attention that there is the load factor, a relation between the number
+  of elements and the number of bins of the underlaid array. Indeed,
+  it is implementation dependant, but it is better to answer that it is
+  *O(n)* in general.
