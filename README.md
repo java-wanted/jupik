@@ -30,6 +30,8 @@ There are topics of the course:
 
 - [Collection Framwork](06-collections/COLLECTIONS.md)
 
+- [Generics](07-generics/GENERICS.md)
+
 ## DISCLAIMER
 
 The text provided is typed by me to solve or to prepare to solve the issues of
