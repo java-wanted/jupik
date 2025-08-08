@@ -22,5 +22,6 @@
 
     <modules>
         <module>obox</module>
+        <module>gbox</module>
     </modules>
 </project>
