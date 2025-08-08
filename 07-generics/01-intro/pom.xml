@@ -23,5 +23,6 @@
     <modules>
         <module>obox</module>
         <module>gbox</module>
+        <module>tbox</module>
     </modules>
 </project>

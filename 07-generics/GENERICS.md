@@ -26,3 +26,13 @@ For example:
 
 - Declare this variable with a generic type defined when an instance of the class
   Box is declared.
+
+Solve the follwoing boxing issue:
+
+- Create a class box to keep three instances of objects, each of its own parametric
+  type
+
+- Create two instances of this class with parametric types defined to be String,
+  Integer and Float in order.
+
+- Calculate the sum of all variables of numberic types within this two boxes.
