@@ -75,5 +75,6 @@
 
     <modules>
         <module>01-intro</module>
+        <module>02-parms</module>
     </modules>
 </project>

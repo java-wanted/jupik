@@ -36,3 +36,12 @@ Solve the follwoing boxing issue:
   Integer and Float in order.
 
 - Calculate the sum of all variables of numberic types within this two boxes.
+
+### Parametrisation
+
+Parametrise collections created to solve the car park problem to keep arbitrary
+objects:
+
+- Parametrise interfaces CarCollection, CarList, CarSet, CarQueue and CarMap
+
+- Parametrise their implementations in accord
