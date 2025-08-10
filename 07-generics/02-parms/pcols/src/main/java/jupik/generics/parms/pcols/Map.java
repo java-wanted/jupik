@@ -1,5 +1,7 @@
 package jupik.generics.parms.pcols;
 
+import java.util.Iterator;
+
 /**
  * A collection of elements indexed by its keys
  *
@@ -63,4 +65,35 @@ public interface Map<K, E>
      * @return the list of all values
      */
     public List<E> values();
+
+    /**
+     * A key-value relation
+     */
+    public static interface Entry<K, E>
+    {
+        /**
+         * Get the key of the key-value pair
+         *
+         * @return the key
+         */
+        public K key();
+
+        /**
+         * Get the key of the key-value pair
+         *
+         * @return the key
+         */
+        public E value();
+    }
+
+    /**
+     * Get an iterator over key-value pairs of the map
+     *
+     * <p>
+     * It allows to implement the interface Set above an implementation of this
+     * interface.
+     *
+     * @return the set of entries
+     */
+    public Iterator<Entry<K, E>> entryIterator();
 }
