@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>jupik</groupId>
+        <artifactId>generics</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <groupId>jupik.generics</groupId>
+    <artifactId>extnds</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+
+    <name>Extnds Project</name>
+    <description>
+        Examples how to restrict and to extend generic types
+    </description>
+
+    <modules>
+        <module>ebox</module>
+    </modules>
+</project>

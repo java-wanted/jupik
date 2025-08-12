@@ -45,3 +45,68 @@ objects:
 - Parametrise interfaces CarCollection, CarList, CarSet, CarQueue and CarMap
 
 - Parametrise their implementations in accord
+
+### Extends and WildCard
+
+Create a class Box with one generic parameter that:
+
+- keeps an array of some objects
+
+- provides a constructor that receive an arbitrary number of objects
+  as arguments
+
+- provides an operation to retrieve the mean of that objects
+
+To calculate the mean, objects could be cast to the interface Number. If so,
+the generic parameter must be restricted to types that could be casted to the
+Number:
+
+    class Box<T extends Number> {
+        protected T []arrray
+        ...
+
+It is possible to restrict a type to extend a few interfaces. Use the sign
+& to achieve this:
+
+    class Box<T extends Number & Comarable<T> & Serializable> {
+        ...
+
+Now the generic type T of the class Box extends the interface Comarable
+on type T. And its is possible to provide operation to compare boxes
+of the same type T against the mean.
+
+    class Box<T extends Number & Comarable<T>> {
+        public int compare(Box<T> other) {
+            ...
+
+There is a problem. Let it is requred to compare boxes of different types.
+If so, the wild card operator *?* must be specified instead the type T in the
+operation compare:
+
+    class Box<T extends Number & Comparable<T>> {
+        public int compare(Box<?> other)
+            ...
+
+Take attention that a generic class of a type T is not an ancestor of a
+generic class of a type that is successor of the type T. Thus, the following
+brings a compilation error:
+
+    ArrayList<Number> items = new ArrayList<Integer>();
+    error: incompatible types: ArrayList<Integer> cannot be converted to
+           ArrayList<Number>
+
+In the such case, it must be specified that the ancestor type accepts
+a type that extends some basic type:
+
+    ArrayList<? extends Number> items = new ArrayList<Integer>();
+
+Thus:
+
+- It is possible to restrict a type of a generic parameter with the keyword
+  *extends*
+
+- A few interfaces separated by the sign *&* could be specified in the such
+  case
+
+- The wild card *?* could be used to specify a type that extends some
+  type (the type objects if the clause *extends* is absent)
