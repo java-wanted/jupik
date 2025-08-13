@@ -141,3 +141,28 @@ Indeed, the statements are equal. The keyword *extends* is expected. But the key
 
     <T1 extends T2, T2> void operation(T1 a, T2 b)
     <T1> void operation(T1 a, List<? super T1> b)
+
+Solve the following agrarian problem:
+
+- Create a type Fruit and its successors Apple and Orange
+
+- Provide the type Fruit with property weight, 1 for instancies of Apply and 1.5 for
+  instancies of Orange
+
+- Create a parameterised type Basket. An instance of this type for types Apple or
+  Orange could keep the only instances of Apple or Orange respectively. An instance
+  for the type Fuit could keep instances of both Apple and Orange. It is acceptable to
+  use a collection internally.
+
+- Provide the type Basket with the operation wieght to retrive the total weight of
+  instancies of Fruit in an instance of the type Basket
+
+- Provide the type Basket with the operation add to add a Fruit into the basket
+
+- Provide the type Basket with the operation compare to compare two instancies of
+  the type Basket of elements of any types against them weight
+
+- Provide the type Basket with the operatioin transfer to move the all instancies of
+  the type Fruit from a one instance of the type Basket to an other one. It is
+  permited to move only Apples into an Apple Basket and to move only Oranges into
+  an Orange Basket. But it is accepted to move any Basket into a Fruit one.

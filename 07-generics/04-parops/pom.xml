@@ -22,5 +22,6 @@
 
     <modules>
         <module>limov</module>
+        <module>agrar</module>
     </modules>
 </project>
