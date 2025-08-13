@@ -126,3 +126,18 @@ Solve the following transfer problem:
 - Provide an operation that receive two instances of the type List, src and dst
 
 - The operation must move all elements from the first instance to the second one
+
+Let there is a type A and its successor type B. It is valid to assign an instance
+ot the type B to a variable of the type A.
+
+Update the operation provided to solver the transfer problem:
+
+- It MUST BE accepted to pass any successor of a type as the src argument
+
+- It MUST BE accepted to pass any ancestor ot a type as the dst argument
+
+Indeed, the statements are equal. The keyword *extends* is expected. But the keyword
+*super* could be used in some cases also.
+
+    <T1 extends T2, T2> void operation(T1 a, T2 b)
+    <T1> void operation(T1 a, List<? super T1> b)

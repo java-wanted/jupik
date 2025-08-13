@@ -4,7 +4,7 @@ import jupik.generics.parms.pcols.List;
 
 public class Track
 {
-    public static <T> void transfer(List<T> src, List<T> dst)
+    public static <T> void transfer(List<T> src, List<? super T> dst)
     {
         for (T e: src)
         {

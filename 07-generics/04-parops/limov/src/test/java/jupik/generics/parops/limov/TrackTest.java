@@ -22,44 +22,44 @@ public class TrackTest
         }
     }
 
+    void validateRange(LinkedList<Number> list, int first)
+    {
+        for (Number v: list)
+        {
+            Assertions.assertEquals(first++, v.intValue());
+        }
+    }
+
     @DisplayName("Test move to empty")
     @Test
     void testMove()
     {
         int size = source.size();
-        LinkedList<Integer> dest = new LinkedList<>();
+        LinkedList<Number> dest = new LinkedList<>();
 
         Track.transfer(source, dest);
 
         Assertions.assertEquals(0, source.size());
         Assertions.assertEquals(size, dest.size());
 
-        int i = 0;
-        for (Integer v: dest)
-        {
-            Assertions.assertEquals(i++, v);
-        }
+        validateRange(dest, 0);
     }
 
-    @DisplayName("Test move empty")
+    @DisplayName("Test move of empty")
     @Test
     void testMoveEmpty()
     {
-        LinkedList<Integer> dest = source;
+        LinkedList<Number> dest = new LinkedList<>();
+
+        Track.transfer(source, dest);
         int size = dest.size();
 
-        source = new LinkedList<>();
         Track.transfer(source, dest);
 
         Assertions.assertEquals(0, source.size());
         Assertions.assertEquals(size, dest.size());
 
-        int i = 0;
-
-        for (Integer v: dest)
-        {
-            Assertions.assertEquals(i++, v);
-        }
+        validateRange(dest, 0);
     }
 
     @DisplayName("Test move to not empty")
@@ -67,7 +67,7 @@ public class TrackTest
     void testMoveToNotEmpty()
     {
         int size = source.size();
-        LinkedList<Integer> dest = new LinkedList<>();
+        LinkedList<Number> dest = new LinkedList<>();
 
         for (int i = -size; i < 0; ++i)
         {
@@ -79,11 +79,6 @@ public class TrackTest
         Assertions.assertEquals(0, source.size());
         Assertions.assertEquals(size * 2, dest.size());
 
-        int i = -size;
-
-        for (Integer v: dest)
-        {
-            Assertions.assertEquals(i++, v);
-        }
+        validateRange(dest, -size);
     }
 }
