@@ -110,3 +110,19 @@ Thus:
 
 - The wild card *?* could be used to specify a type that extends some
   type (the type objects if the clause *extends* is absent)
+
+### Parameterised operations
+
+Let it is required to provide an operation that receivece a collections of
+elements of an arbitrary type and returns an element of this collections.
+It is possible to parametrise this operation to return the element with
+a specific type:
+
+    <T> T getElement(Collection<T> collection) {
+        ...
+
+Solve the following transfer problem:
+
+- Provide an operation that receive two instances of the type List, src and dst
+
+- The operation must move all elements from the first instance to the second one
