@@ -32,6 +32,8 @@ There are topics of the course:
 
 - [Generics](07-generics/GENERICS.md)
 
+- [Multithreading](08-multithreading/MULTITHREADING.md)
+
 ## DISCLAIMER
 
 The text provided is typed by me to solve or to prepare to solve the issues of
