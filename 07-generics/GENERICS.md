@@ -166,3 +166,34 @@ Solve the following agrarian problem:
   the type Fruit from a one instance of the type Basket to an other one. It is
   permited to move only Apples into an Apple Basket and to move only Oranges into
   an Orange Basket. But it is accepted to move any Basket into a Fruit one.
+
+### Interview
+
+Answer the following questions:
+
+- What are the Java Generics?
+
+  To answer that generics allows to provide a type as a parameter does not describe
+  the matter. Parameterised types just provide some type check information for the
+  Java translator. Do not rely that an object has a specific type in runtime.
+
+- What is the usage of the keywords extends and super relative to generics?
+
+- What is the wildcard?
+
+- If an operation receive a collection of Numbers, is it possible to provide
+  it with a collection of Integers?
+
+  The answer that it is not possible is not complete. It is required to draw attention
+  that there is no inheritance between concrete types of a parameterised type. Let it
+  could be prermitted to create a refference on a collection in the such way. Then it
+  must be permitted to add a Float into this concreate collection via this refference.
+  But it is exactly the thing that generics are indended to prohibit if possible.
+
+- What is a concrete type of a collection that must be specified to let it to accept
+  addition of any numberic type - float, double and so on?
+
+  It is wrong that it must extends Number. Take attention to the word any and to the fact
+  that number is intended to represent values of six specific types only or some types
+  that could be represented by this types in a resonable way. Actually, to accept any
+  numeric type the concrete type must be Object.
