@@ -43,3 +43,13 @@ There are two operation to interrupt execution of a task, *stop* and
 Solve the following issue:
 
 - Update the previous application to stop printing numbers.
+
+To wait for completion of a task, the operation *join* cold be used.
+
+Solve the following issue:
+
+- Create three collections of integers.
+
+- Fill each of them with number from 0 to 1000000 in a dedicated task.
+
+- Check the size of collections.
