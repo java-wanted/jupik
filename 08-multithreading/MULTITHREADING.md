@@ -28,3 +28,18 @@ Create an application that:
 - prints integral numbers from 0 to 1000 one line on a dedicated task
 
 - prints the word *Finish*
+
+### Stopping tasks
+
+There are two operation to interrupt execution of a task, *stop* and
+*interrupt*:
+
+- The former terminates a task immediately, without given it a chance to free
+  up resources, so it is deprecated and should not be used.
+
+- The later just set the attribute *interrupted*. It is responsibility of the
+  task to check this flag and complete execution.
+
+Solve the following issue:
+
+- Update the previous application to stop printing numbers.
