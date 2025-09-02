@@ -62,3 +62,20 @@ Solve the following issue:
 - Create three tasks, each one prints a specific number
 
 - Serialise tasks to print numbers one, two and three in order
+
+There is a way to check the time of execution of some logic. Get the current time,
+the operation *currentTimeMillis* before and after execution of this logic and
+check the number of milliseconds elapsed.
+
+Solve the following issue:
+
+- Create an array of 10 millions float number and fill it with ones initially
+
+- Provide an operation to assign elements of an array with values calculated by
+  the formula:
+
+        arr[i] = (float)(arr[i] * Math.sin(0.2f + i / 5f + i / 5f) *
+                 Math.cos(0.2f + i / 5f) * Math.cos(0.4f + i / 2f))
+
+- Call the operation on the array and print the number of millisecond elapsed to
+  calculate elements.
