@@ -79,3 +79,16 @@ Solve the following issue:
 
 - Call the operation on the array and print the number of millisecond elapsed to
   calculate elements.
+
+- Provide an operation to calculate elements with values in parallel:
+
+  - Split the array into two parts. The operation *arraycopy* MUST BE used to
+    copy elements of the array to parts.
+
+  - Evaluate elements of parts on two tasks in accord with the formula above.
+
+  - Copy the result of calculation into the origin array. The operation
+    *arraycopy* MUST BE used also.
+
+- Call this operation and print the time elapsed. Compare it against the time
+  taken to calculate elements on a single task.
