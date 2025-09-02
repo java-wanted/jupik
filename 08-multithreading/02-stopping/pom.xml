@@ -23,5 +23,6 @@
     <modules>
         <module>thnus</module>
         <module>thnuf</module>
+        <module>thnor</module>
     </modules>
 </project>

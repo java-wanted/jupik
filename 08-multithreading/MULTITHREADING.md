@@ -53,3 +53,12 @@ Solve the following issue:
 - Fill each of them with number from 0 to 1000000 in a dedicated task.
 
 - Check the size of collections.
+
+When several tasks are started with the operation *start* sequentially, the order
+the tasks will be start is not determined.
+
+Solve the following issue:
+
+- Create three tasks, each one prints a specific number
+
+- Serialise tasks to print numbers one, two and three in order
