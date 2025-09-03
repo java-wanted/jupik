@@ -92,3 +92,16 @@ Solve the following issue:
 
 - Call this operation and print the time elapsed. Compare it against the time
   taken to calculate elements on a single task.
+
+### Service tasks
+
+It is possible to mark tasks to be service tasks:
+
+    task.setDaemon(true)
+
+If so, such a task are aborted after all not service tasks terminated.
+
+Extend the application that calculates elements of arrays with a service tasks:
+
+- The service task MUST print the next integer number starting with zero, a one
+  per second until other tasks are running.
