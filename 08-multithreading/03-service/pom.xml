@@ -17,10 +17,11 @@
 
     <name>Service Project</name>
     <description>
-        Examples of service tasks in Java
+        Examples of service tasks and race conditions in Java
     </description>
 
     <modules>
         <module>thsar</module>
+        <module>thrace</module>
     </modules>
 </project>

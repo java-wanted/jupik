@@ -105,3 +105,12 @@ Extend the application that calculates elements of arrays with a service tasks:
 
 - The service task MUST print the next integer number starting with zero, a one
   per second until other tasks are running.
+
+There are race conditions in Java:
+
+- Provide a type with an attribute *count*.
+
+- Increment the attribute one thousand times, then decrement it the same number
+  of times.
+
+- Validate the result value is zero.
