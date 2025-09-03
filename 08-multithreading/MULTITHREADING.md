@@ -114,3 +114,6 @@ There are race conditions in Java:
   of times.
 
 - Validate the result value is zero.
+
+- Update counting to increment the attribute on a one thread and to decrement it
+  on an other one.
