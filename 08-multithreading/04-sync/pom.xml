@@ -22,5 +22,6 @@
 
     <modules>
         <module>cashpo</module>
+        <module>cashmo</module>
     </modules>
 </project>
