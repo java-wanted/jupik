@@ -77,5 +77,6 @@
         <module>01-intro</module>
         <module>02-stopping</module>
         <module>03-service</module>
+        <module>04-sync</module>
     </modules>
 </project>

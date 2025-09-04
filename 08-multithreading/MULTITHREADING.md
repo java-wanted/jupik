@@ -117,3 +117,83 @@ There are race conditions in Java:
 
 - Update counting to increment the attribute on a one thread and to decrement it
   on an other one.
+
+### Synchronisation
+
+In Java, it is possible to mark some operations of a type with the keyword
+*synchronised*. Only a one task could execute a one of such operations at a
+time. A task will be stopped until it could be such a task.
+
+    class A {
+        synchronized op1() { BLOCK1 }
+        synchronized op2() { BLOCK2 }
+    }
+
+There is the conception of monitors. A monitor is an object that has two states,
+either acquired or released. If released, only a one task cold hold it at a time,
+others will be stopped until the monitor will be released.
+
+A block of logic that MUST BE executed by only a one task at a time is called a
+critical section. A monitor allows to ensure such a way of execution.
+
+In Java, an instance of any object could be used as a monitor. To achieve it,
+a statement *synchronised* could be used.
+
+    class A {
+        Object monitor = new Object();
+        op1() { ... synchronised(monitor) { BLOCK1 } ... }
+        op2() { ... syncthonised(monitor) { BLOCK2 } ... }
+    }
+
+If an operation of a type is defined with the keyword *synchronised*, the
+instance of the type, *this*, is used as a monitor.
+
+There are questions that MUST BE answered to be hired on a position of Java Plus
+Junior programmer:
+
+- What is the difference between synchronised and not synchronised operations?
+
+  To answer that a synchronised operation could be called by a one task only is
+  not correct. Actually, the number of tasks that could request to acquire a
+  monitor is not limited.
+
+- What is the object of synchronisation, a monitor? What is its purpose?
+
+- What things could be used as a monitor?
+
+  It is syntactically wrong that a class could be used as a monitor. Although,
+  it is possible to use the class object of a class for this purpose.
+
+- What is the monitor of an operation marked *synchronised*?
+
+- Let there are four operations. What operations are not mutually exclusive
+  if called on different tasks?
+
+    void op1() {}
+    synchronised void op2() {}
+    synchronised void op3() {}
+    void op4() { synchronised(lock1) {} }
+
+Solve the following bank issue:
+
+- Create a type Cashpoint. Provide an operation that takes a user's name and the
+  amount to be withdrawn from her account.
+
+- There are step to withdraw an account:
+
+  - Print the message "NAME has come to the cashpoint" and wait for 2 seconds.
+
+  - Validate that there are enough money in the cashpoint. If the validation
+    passed, print the message "NAME has withdrawn AMOUNT rubles". Otherwise,
+    print the message "There is no enough money for NAME."
+
+- Create a few tasks. Each tasks represent a user and an amount to withdraw for
+  her. Make it so that there is no enough money for some users.
+
+- Organise the work of cashpoint in to ways:
+
+  - Only one task is served at a time. Use *join* to make other tasks to wait
+    to be served.
+
+  - Any number of tasks are served at a time. Use a monitor to validate there are
+    enough money.
