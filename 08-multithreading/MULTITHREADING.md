@@ -197,3 +197,51 @@ Solve the following bank issue:
 
   - Any number of tasks are served at a time. Use a monitor to validate there are
     enough money.
+
+### Atomic and Volatile
+
+Let get back to the counter problem:
+
+- There is a class Counter with an integral attribute *count*.
+
+- Let the value of the attribute is incremented one thousand times on a one task.
+  And it is decremented one thousand time and an other task in parallel.
+
+- The result value of the attribute MUST BE zero.
+
+Actually, to increment or to decrement an integral value means a sequence of three
+operations:
+
+- load the current value of the attribute into a register
+
+- increment or decrement the value
+
+- write the result into the attribute
+
+Indeed, all these operations MUST BE performed as a critical section, acquiring
+the same monitor, for example.
+
+The same time, some hardware platforms provide instructions to perform such
+operations at once, so called atomically, without the need to use a monitor for
+this. For such a case, there are so called atomic wrappers of primitive types in
+Java, e.g. *AtomicInteger*. Such types provide operation to update the values of
+the basic types at once. For example, the operations *getAndIncrement*,
+*compareAndExchange* .
+
+There is the keyword *volatile* also. If a variable is declared with this
+specifier:
+
+- When read, the value of this variable is got from a local cache or the memory,
+  not from a copy for a specific task if provided by a translator.
+
+- When written, the value of this variable is written into cache and brings
+  updating of memory and caches.
+
+Solve the counter problem:
+
+- Provide a type with the integer attribute *count*
+
+- Increment the value of this attribute one thousand times on a one task and
+  decrement it the same number of times on an other one in parallel
+
+- The result value MUST BE zero

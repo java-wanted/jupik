@@ -78,5 +78,6 @@
         <module>02-stopping</module>
         <module>03-service</module>
         <module>04-sync</module>
+        <module>05-atomic</module>
     </modules>
 </project>
