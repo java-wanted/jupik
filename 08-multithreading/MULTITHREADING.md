@@ -245,3 +245,60 @@ Solve the counter problem:
   decrement it the same number of times on an other one in parallel
 
 - The result value MUST BE zero
+
+### Interview about Concurrency
+
+The following questions MUST BE answered to be hired on a position of Junior
+Java Plus Plus programmer:
+
+- What is multithreading?
+
+  To answer that it is ability to perform several jobs on multiple tasks is wrong.
+  It seams that it is right to point that multithreading is the ability to perform
+  several tasks as a single process. So that, this tasks shares some resources
+  without usage of IPC mechanisms.
+
+- Is it possible to stop a thread after it starts? If so, what are the methods?
+
+  It is just wrong to specify the interrupt operation. It just sets a flag that the
+  thread should terminate. Moreover, the answer is no in general. On \*nix, it could
+  be required to send a signal to the task.
+
+- Why stopping a task with the stop operation is not recommended?
+
+  It is wrong to answer that it does not left the task to terminate gracefully.
+  In contrast, it is not recommended to write tasks that will not stop themselves
+  after the interrupt operation called.
+
+- What happens after the operation interrupt has been called? Why this method
+  is safer that others?
+
+  It is wrong to answer that this method is safer because it does not stop a task
+  actually. At the first, the meaning of the word safer MUST BE considered.
+
+- What does the join operation?
+
+- How to get a reference on the main thread?
+
+  It is not correct to mention the operation *currentThread*. In Java, the main
+  thread is a task on which the operation main is executed. Although, it seams to be
+  wrong if a task depends on such a reference.
+
+- Why it is required to put the sleep and join operations into a try-cache
+  statement? What exception could be risen and at what point?
+
+- What are the methods to synchronise threads?
+
+- What is the monitor if an operation is declared with the *synchronised* specifier?
+
+- Let some operations of a type is declared with the *synchronised* specifier. If some
+  task calls a synchronised operation, is it possible to call an other synchronised /
+  not synchronised operation on an other task at the same time?
+
+- What are daemon tasks?
+
+- What are methods to create a task?
+
+- What methods to create a task is preferable and why?
+
+- What is the different between operations run and start?
