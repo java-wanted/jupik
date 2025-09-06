@@ -302,3 +302,42 @@ Java Plus Plus programmer:
 - What methods to create a task is preferable and why?
 
 - What is the different between operations run and start?
+
+### CountDownLatch and ExecutorService
+
+Let it is required to perform ten tasks in parallel. Let a task print
+the word start and their own ordinal number, wait for a second, then
+print the word finish and terminate.
+
+There are ways to wait for the completion of this tasks:
+
+- Store references onto task into a collection and call the operation
+  join on them in a loop
+
+- Use the *CountDonwLatch* counter to wait for termination of a specified
+  number of tasks
+
+Let it is required to perform a lot of jobs on dedicated tasks. It is not rational
+to create a large number of tasks at the same time. Instead, use an implementation
+of ExecutorService, that creates a poll of a specified number of tasks. The service
+will perform jobs on free tasks.
+
+Solve the following computational issue:
+
+- Provide an operation to calculate and print the sum of all even integers from
+  0 to 1 000 000
+
+- Provide an operation to calculate and print the sum of all integers from 0 to
+  1 000 000, that are divided by 7 with a zero remainder
+
+- Provide an operation to create a collection of 1 000 integers and fill it with
+  random values. Then calculate and print the number of even integers in this
+  collection.
+
+- Use an executor service to perform this jobs.
+
+- Wait for completions of the jobs above with *CountDownLatch* and print the time
+  of execution.
+
+- Compare the time of execution when the poll of execution consists of three
+  tasks and when it consists of a single task.

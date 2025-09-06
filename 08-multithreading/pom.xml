@@ -79,5 +79,6 @@
         <module>03-service</module>
         <module>04-sync</module>
         <module>05-atomic</module>
+        <module>07-exool</module>
     </modules>
 </project>
