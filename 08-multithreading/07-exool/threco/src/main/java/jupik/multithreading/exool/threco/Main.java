@@ -4,6 +4,9 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.TimeUnit;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Random;
 
 public class Main
 {
@@ -164,23 +167,111 @@ public class Main
 
     public static void main(String []argv)
     {
+        /* The three computation problem */
         Computation []jobs = {
             new Computation("1"){
+                /* The sum of all even integers from 0 to 1 000 000 inclusive */
                 public long compute() throws InterruptedException
                 {
-                    return 1;
+                    int n = 1_000_000 + 1;
+                    int l = 0x100;
+                    int i = 0;
+                    long s = 0;
+
+                    while (i < n)
+                    {
+                        if (Thread.interrupted())
+                        {
+                            throw new InterruptedException();
+                        }
+
+                        for (int k = 0; k < l && i < n; ++k, ++i)
+                        {
+                            if ((i & 1) == 0)
+                            {
+                                s += i;
+                            }
+                        }
+                    }
+
+                    return s;
                 }
             },
+            /* The sum of all integers from 0 to 1000000 inclusive, divided by 7
+             * with a zero remainder
+             */
             new Computation("2"){
                 public long compute() throws InterruptedException
                 {
-                    return 2;
+                    int n = 1_000_000 + 1;
+                    int l = 0x100;
+                    int i = 0;
+                    long s = 0;
+
+                    while (i < n)
+                    {
+                        if (Thread.interrupted())
+                        {
+                            throw new InterruptedException();
+                        }
+
+                        for (int k = 0; k < l && i < n; ++k, ++i)
+                        {
+                            if (i % 7 == 0)
+                            {
+                                s += i;
+                            }
+                        }
+                    }
+
+                    return s;
                 }
             },
+            /* The number of even values in a collection of 1000 random
+             * integers.
+             */
             new Computation("3"){
                 public long compute() throws InterruptedException
                 {
-                    return 3;
+                    int n = 1_000;
+                    Collection<Integer> data = new ArrayList<>(n);
+                    Random r = new Random();
+                    int l = 0x100;
+                    int i = 0;
+                    long c = 0;
+
+                    while (i < n)
+                    {
+                        if (Thread.interrupted())
+                        {
+                            throw new InterruptedException();
+                        }
+
+                        for (int k = 0; k < l && i < n; ++k, ++i)
+                        {
+                            data.add(r.nextInt());
+                        }
+                    }
+
+                    i = 0;
+
+                    while (i < n)
+                    {
+                        if (Thread.interrupted())
+                        {
+                            throw new InterruptedException();
+                        }
+
+                        for (int k = 0; k < l && i < n; ++k, ++i)
+                        {
+                            if ((i & 1) == 0)
+                            {
+                                ++c;
+                            }
+                        }
+                    }
+
+                    return c;
                 }
             },
         };
