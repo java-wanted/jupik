@@ -341,3 +341,19 @@ Solve the following computational issue:
 
 - Compare the time of execution when the poll of execution consists of three
   tasks and when it consists of a single task.
+
+### ThreadFactory, Callable and Feature
+
+An ExecutorService could be provided with a ThreadFactory on construction. To
+get tasks, the service will call an operation of this factory.
+
+Solve the following issue:
+
+- Create a job to print integers in order, one per second. The job MUST BE
+  performed on a task of an ExecutorService.
+
+- Configure tasks of this service to run as *daemons*, e.g. to be terminated
+  run on a *daemon* task, e.g. to be terminated when all not *daemon* tasks
+  terminate.
+
+- Print points on the main task, one per second, and then terminate.
