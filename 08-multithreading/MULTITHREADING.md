@@ -357,3 +357,16 @@ Solve the following issue:
   terminate.
 
 - Print points on the main task, one per second, and then terminate.
+
+Normally, it is required to yield the result of execution of a task from an other
+task, e.g. from the main task.
+
+Solve the following issue:
+
+- Create a task to emulate loading of the name of a user and an other task
+  to emulate loading of her age
+
+- While loading, print points
+
+- After the name and age are loaded, print "Name is NAME, age is AGE". Then
+  stop printing points and terminate.
