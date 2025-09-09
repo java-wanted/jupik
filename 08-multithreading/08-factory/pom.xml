@@ -23,5 +23,6 @@
     <modules>
         <module>extory</module>
         <module>exdory</module>
+        <module>exsory</module>
     </modules>
 </project>

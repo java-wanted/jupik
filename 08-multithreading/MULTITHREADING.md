@@ -342,7 +342,7 @@ Solve the following computational issue:
 - Compare the time of execution when the poll of execution consists of three
   tasks and when it consists of a single task.
 
-### ThreadFactory, Callable and Feature
+### ThreadFactory, Callable and Future
 
 An ExecutorService could be provided with a ThreadFactory on construction. To
 get tasks, the service will call an operation of this factory.
@@ -370,3 +370,14 @@ Solve the following issue:
 
 - After the name and age are loaded, print "Name is NAME, age is AGE". Then
   stop printing points and terminate.
+
+The ExecutorService provides a way to return the result of execution of a job.
+There is an operation *submit*:
+
+- It could be passed with a Callable, an interface with the only operation
+  *call* that returns a result and could throw Exception
+
+- It returns an instance of Future, an interface that provides an operation *get*
+  to wait for the completion and then to retrieve the result.
+
+Solve the previous issue using the operation *submit*.
