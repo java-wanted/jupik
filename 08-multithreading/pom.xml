@@ -81,5 +81,6 @@
         <module>05-atomic</module>
         <module>07-exool</module>
         <module>08-factory</module>
+        <module>09-mqueue</module>
     </modules>
 </project>

@@ -381,3 +381,17 @@ There is an operation *submit*:
   to wait for the completion and then to retrieve the result.
 
 Solve the previous issue using the operation *submit*.
+
+### Synchronised Queue
+
+Solve the following queue issue:
+
+- Implement a BlockeingQueue, a FIFO queue of Runnable with two operations:
+
+  - The add operation adds a Runnable at the tail of the queue
+
+  - The take operation remove a Runnable from the head of the queue
+
+- Create a task that remove elements of the queue and run them on dedicated tasks
+
+- Fill a queue with a few tasks on the main task
