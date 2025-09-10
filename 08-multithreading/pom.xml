@@ -80,5 +80,6 @@
         <module>04-sync</module>
         <module>05-atomic</module>
         <module>07-exool</module>
+        <module>08-factory</module>
     </modules>
 </project>
