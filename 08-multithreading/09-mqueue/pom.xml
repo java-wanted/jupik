@@ -23,5 +23,6 @@
     <modules>
         <module>exque</module>
         <module>emque</module>
+        <module>elque</module>
     </modules>
 </project>

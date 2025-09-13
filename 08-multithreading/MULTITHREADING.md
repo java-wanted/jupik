@@ -399,3 +399,6 @@ Solve the following queue issue:
 A monitor, i.e. any object, could be user both to synchronise the access to the
 queue and to wait until it is not empty. There are operations *wait*, *nofity* and
 *notifyAll* for it. This operation MUST BE called on a tasks that holds the monitor.
+
+There are blocking queue in Java Standard Library, e.g. LinkedBlockingQueue. Take
+attention that this queues does not accept null elements.
