@@ -395,3 +395,7 @@ Solve the following queue issue:
 - Create a task that remove elements of the queue and run them on dedicated tasks
 
 - Fill a queue with a few tasks on the main task
+
+A monitor, i.e. any object, could be user both to synchronise the access to the
+queue and to wait until it is not empty. There are operations *wait*, *nofity* and
+*notifyAll* for it. This operation MUST BE called on a tasks that holds the monitor.
