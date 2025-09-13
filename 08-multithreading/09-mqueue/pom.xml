@@ -24,5 +24,6 @@
         <module>exque</module>
         <module>emque</module>
         <module>elque</module>
+        <module>tasro</module>
     </modules>
 </project>

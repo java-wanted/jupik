@@ -402,3 +402,15 @@ queue and to wait until it is not empty. There are operations *wait*, *nofity* a
 
 There are blocking queue in Java Standard Library, e.g. LinkedBlockingQueue. Take
 attention that this queues does not accept null elements.
+
+Solve the following multitask issue:
+
+- Create three tasks, each task prints a later five times.
+
+  The first task prints the later A, the second - B, the third - C.
+
+- Organise execution of tasks in such a way that the string ABCABCABCABCABC will
+  be printed.
+
+  DO NOT use operations sleep and join. It is REQUIRED to use operations wait and
+  notifyAll.
