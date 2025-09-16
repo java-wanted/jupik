@@ -414,3 +414,21 @@ Solve the following multitask issue:
 
   DO NOT use operations sleep and join. It is REQUIRED to use operations wait and
   notifyAll.
+
+### Mutual Exclusion
+
+Solve the following transfer of value problem:
+
+- Let there is a class with two attributes, *first* and *second*, to keep
+  non negative integers
+
+- Let there are two operations, a one to transfer some value from the first
+  attribute to the one, an other one to transfer some value in the opposite
+  direction. The values of attributes MUST BE kept non negative.
+
+- Let there are two monitors, a one for the first operation and an other one
+  for the other one. To preserve the total, each of operations MUST acquire
+  both monitors.
+
+- Create two task, the first calls the first operation and the second - the
+  second one.
