@@ -432,3 +432,30 @@ Solve the following transfer of value problem:
 
 - Create two task, the first calls the first operation and the second - the
   second one.
+
+Let there are two resources, 1 and 2, and two tasks, A and B. And let each
+of the tasks REQUIRES to acquire both this resources to succeed and then
+to release this resources.
+
+Consider the following case. Let the task A has acquired only the resource 1
+and the task B has acquired only the resource 2. Then the first 1 waits
+until it could acquire the resource 2 and the task 2 waits until it could
+acquire the resource 1.
+
+The logic of a program MUST either prevent such a case or to resolve it,
+providing a one of tasks with both resources. But to be hired on a position of
+a high society Java Junior Programmer, it is enough to know that such a case is
+called a *dead lock*.
+
+Solve the following multifunctional problem:
+
+- Create a type that emulates scanning and printing of documents, operations
+  print and scan that accepts a number of pages as a parameter N
+
+  The operation print prints "Printed 1 page(s)", "Printed 2 page(s)" and so
+  on, with some delay, until the name N is printed. The operation scan does the
+  same thing, except it prints "Scanned" instead "Printed".
+
+- Synchronise the operations in such a way that one print operation and one scan
+  operation can be executed in parallel. But it is impossible to execute more
+  than one print or more than one scan operation simultaneously.

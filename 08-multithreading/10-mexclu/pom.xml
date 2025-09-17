@@ -22,5 +22,6 @@
 
     <modules>
         <module>traval</module>
+        <module>mufunc</module>
     </modules>
 </project>
