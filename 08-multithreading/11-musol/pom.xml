@@ -22,5 +22,6 @@
 
     <modules>
         <module>sycol</module>
+        <module>cowol</module>
     </modules>
 </project>
