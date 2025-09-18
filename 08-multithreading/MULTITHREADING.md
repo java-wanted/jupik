@@ -459,3 +459,20 @@ Solve the following multifunctional problem:
 - Synchronise the operations in such a way that one print operation and one scan
   operation can be executed in parallel. But it is impossible to execute more
   than one print or more than one scan operation simultaneously.
+
+### MT-safe Collections
+
+Let there is a collection. And elements are added into this collection on several
+tasks. If so, the addition of elements MUST BE synchronised.
+
+There are ways to synchronise collections of Java Collection Framework:
+
+- To wrap a collection with a synchronising operation of the type Collections, e.g.
+  with the *synchronisedList* operation. In such a case, all operations are
+  synchronised with a single monitor.
+
+- To use synchronised versions of collections, e.g. *CopyOnWriteArrayList*. In such
+  a case, to change a collection, a copy is first created, changes are made to the
+  copy, and then the copy replaces the original. If so, at a given moment of time,
+  only one task can modify the collection, but reading could be performed without
+  blocking.
