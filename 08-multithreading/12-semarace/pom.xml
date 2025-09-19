@@ -23,5 +23,6 @@
     <modules>
         <module>fisem</module>
         <module>fibar</module>
+        <module>mucar</module>
     </modules>
 </project>

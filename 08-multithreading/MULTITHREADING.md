@@ -508,3 +508,21 @@ Consider the following VFS parties problem:
 To accomplish this, a type CyclicBarrier can be used. Its instance is set with
 an integer, the minimal number of tasks that MUST BE waiting on the barrier before
 this number of tasks will be allowed to go out.
+
+Solve the following car race problem:
+
+- Each car must prepare to the start, drive a section of road, drive
+  through a tunnel, drive a section of road.
+
+- There are ten cars in total.
+
+- Each car takes different time to prepare to the race but all cars must start
+  simultaneously.
+
+- Only three cars can drive through the tunnel.
+
+- When all ten cars have finished, print the number of the winner and the list of
+  all cars with them results ordered by the numbers of cars.
+
+- The time taken by a car to prepare for the race and to drive each section must
+  be set by a random number.
