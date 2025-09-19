@@ -497,3 +497,14 @@ To solve such a task the type Semaphore could be used. An instance of this type
 can be set with an integer, a number of units of a resource. Then, the operation
 acquire can be used to hold a unit of the resource for exclusive access, and the
 operation release can be used to release it.
+
+Consider the following VFS parties problem:
+
+- Let there are several tasks that MUST complete some preparatory work and then
+  start performing a common work simultaneously
+
+- Exactly a specific number of tasks MUST start at the same time.
+
+To accomplish this, a type CyclicBarrier can be used. Its instance is set with
+an integer, the minimal number of tasks that MUST BE waiting on the barrier before
+this number of tasks will be allowed to go out.
