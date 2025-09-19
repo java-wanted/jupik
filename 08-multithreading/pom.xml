@@ -84,5 +84,6 @@
         <module>09-mqueue</module>
         <module>10-mexclu</module>
         <module>11-musol</module>
+        <module>12-semarace</module>
     </modules>
 </project>

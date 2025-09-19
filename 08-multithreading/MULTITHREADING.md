@@ -476,3 +476,24 @@ There are ways to synchronise collections of Java Collection Framework:
   copy, and then the copy replaces the original. If so, at a given moment of time,
   only one task can modify the collection, but reading could be performed without
   blocking.
+
+### Semaphores and Races
+
+Let a hundreds of files MUST BE downloaded. The question is, what is better, to
+download them sequentially or in parallel? Similarly, there are cases when it is
+REQUIRED to limit the number of tasks using a resource at the same time.
+
+Consider the following VFS limiting problem:
+
+- Provide an operation to emulate access to the VFS system, with the sleep
+  operation for example
+
+- Create ten tasks that works some work, calls this VFS operation and then
+  terminates
+
+- Limit the number of tasks that calls this VFS operation at the same time
+
+To solve such a task the type Semaphore could be used. An instance of this type
+can be set with an integer, a number of units of a resource. Then, the operation
+acquire can be used to hold a unit of the resource for exclusive access, and the
+operation release can be used to release it.
