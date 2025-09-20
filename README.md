@@ -34,6 +34,8 @@ There are topics of the course:
 
 - [Multithreading](08-multithreading/MULTITHREADING.md)
 
+- [Stream API](09-stream/STREAM.md)
+
 ## DISCLAIMER
 
 The text provided is typed by me to solve or to prepare to solve the issues of
