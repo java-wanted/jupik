@@ -526,3 +526,54 @@ Solve the following car race problem:
 
 - The time taken by a car to prepare for the race and to drive each section must
   be set by a random number.
+
+### Interview
+
+The following question MUST BE answered to be hired on a position of a Java Plus Plus
+Junior Programmer:
+
+- What are the methods to create threads?
+
+- What is a preferred method to create a thread, why?
+
+- Tell about operations wait, notify and notifyAll. Why are they needed and on which
+  objects can they be called?
+
+  It it also important to notice that these operations MUST BE called objects
+  acquired by the current task.
+
+- What does the wait operation do?
+
+- What do the notify and notify operations do?
+
+- What is the monitor if an operation is marked with the synchronised keyword?
+
+- What is the *deadlock*?
+
+  It is wrong to note that it is the state when the all task are waiting.
+  It MUST BE noted that a task holding a resource waits for an other resource
+  that is held by a task that waits for the resource the first task holds.
+
+- What do you know about synchronised collections?
+
+- What is ExecutorService for?
+
+- What is the difference between the submit and execute operations of ExecutorService?
+
+- What is the difference between the Runnable and Callable interfaces?
+
+- What kinds of tasks pool exist?
+
+- How to modify tasks created by ExecutorService? For example, how to make them
+  to be daemon tasks?
+
+- What is a daemon task?
+
+  Also, it MUST BE noticed that such a task is aborted with the stop operation
+  when the main task terminates.
+
+- What are atomic types for?
+
+- What is the keyword volatile for? Where should it be used?
+
+- Tell about types Semaphore, CountDownLatch and CyclicBarrier.
