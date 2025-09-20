@@ -577,3 +577,13 @@ Junior Programmer:
 - What is the keyword volatile for? Where should it be used?
 
 - Tell about types Semaphore, CountDownLatch and CyclicBarrier.
+
+### Additions
+
+In Java, it is possible to define the static operations of a type with
+the synchronised modifier. If so, these operations uses the class instance
+of this type as a monitor.
+
+There is the shutdownNow operation in ExecutorService. Before to shutdown
+tasks of the pull, this operation calls the interrupt operation on all
+running tasks.
