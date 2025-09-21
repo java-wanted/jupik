@@ -57,3 +57,12 @@ and could be skipped:
 
 Update the operation work of the Worker interface to receive the number of times
 the work MUST BE worked and to return the result.
+
+Let there is a collection of integers. Let it is required to provide an operation
+that accepts such a collection and a predicate and returns a collection of only
+numbers that satisfy this predicate.
+
+To declare such predicate in anonymous form, the Predicate interface can be used.
+This interface defines an operation of boolean type that accepts an argument.
+
+Solve the problem above, using an anonymous operation to get even numbers only.

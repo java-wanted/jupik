@@ -23,5 +23,6 @@
     <modules>
         <module>laker</module>
         <module>lamer</module>
+        <module>lafer</module>
     </modules>
 </project>
