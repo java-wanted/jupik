@@ -22,5 +22,6 @@
 
     <modules>
         <module>laker</module>
+        <module>lamer</module>
     </modules>
 </project>

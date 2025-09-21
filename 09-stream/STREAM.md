@@ -41,3 +41,19 @@ Solve the following HRM anonymous issue:
 
 - Create an instance of Director and let her to make work two workers. A one provided
   as an anonymous class and an other one provided as a lambda expression.
+
+Operations that accepts parameters and return a value could be written in the form
+of anonymous expressions also. The types of arguments are known for the translator
+and could be skipped:
+
+    interface I
+    {
+        public R f(A1 a1, A2 a2));
+    }
+    I i = (a1, a2) -> {
+        ...
+    }
+    R r = i(x1, x2);
+
+Update the operation work of the Worker interface to receive the number of times
+the work MUST BE worked and to return the result.
