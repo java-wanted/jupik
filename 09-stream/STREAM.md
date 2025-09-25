@@ -66,3 +66,34 @@ To declare such predicate in anonymous form, the Predicate interface can be used
 This interface defines an operation of boolean type that accepts an argument.
 
 Solve the problem above, using an anonymous operation to get even numbers only.
+
+### Filter and map and collect
+
+To process elements of collections, the collection could be represented as a
+sequence of its elements. Such a sequence is called a stream in Java.
+
+With such streams it is possible:
+
+- to filter some elements of the stream out
+
+- to replace elements of the stream in accord with some mapping
+
+- to put elements of the resulting stream into a collection
+
+The operations on streams belongs to two kinds:
+
+- intermediate operations, that defines how to process each elements
+
+- terminal operations, that perform processing and yield the result
+
+Solve the following root evaluation problem:
+
+- Create a collection of one thousand of random integers, from 100 to 200
+
+- Leave only the integers that are divisible by five without a remainder
+
+- Replace integers with their square roots, the double type
+
+- Replace square roots with strings "sroot:SQUARE\_ROOT"
+
+- Put the result strings into a list

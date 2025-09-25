@@ -75,5 +75,6 @@
 
     <modules>
         <module>01-lambda</module>
+        <module>02-stream</module>
     </modules>
 </project>
