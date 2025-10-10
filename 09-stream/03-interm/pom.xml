@@ -23,5 +23,6 @@
     <modules>
         <module>termage</module>
         <module>thrage</module>
+        <module>riplace</module>
     </modules>
 </project>

@@ -110,3 +110,17 @@ The operation of Stream that return a stream are intermediate operation.
 
 Print three oldest users. If so, the limit operation could be used on the
 stream ordered by the age with the sorted operator.
+
+Solve the following user replace problem:
+
+- Let there are users, meaning the name and age properties
+
+- Order users by their names in the acceding order lexically
+
+- Leave only the users that are older 40 years
+
+- Leave only the first three of hers
+
+- Replace users with her names
+
+- Print the resulting strings onto the terminal
