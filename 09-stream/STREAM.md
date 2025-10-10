@@ -135,3 +135,33 @@ Use the type Optional to solve the lexicographic HRM problem:
 - Print out the information about the first user her name contains a letter "l"
 
 - If there is no such user, report about it.
+
+There are ways to create a Stream:
+
+- Use the stream operation of a Java Collection
+
+- Use the static operation stream of the type Arrays
+
+- Use static operations of the type Stream
+
+There is the parrallelStream operation of the type Stream. This operation
+perform processing of elements of the stream in parallel, on a few tasks.
+
+Solve the following float stream problem:
+
+- Create a collection of float numbers, from zero to 3 millions
+
+- Use the stream operation to convert the collection to a stream
+
+- Update values in accord with the following formula:
+
+    f: v -> sin(0.2f + v / 5) + cos(0.2f + v / 5) + cos(0.4f + v / 2)
+
+- Convert the resulting stream into a collection
+
+- Print the time taken by the calculation
+
+- Use the parralelStream operation to process the origin collection in the
+  same way
+
+- Print the time taken by the calculation in parallel

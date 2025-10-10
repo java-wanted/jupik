@@ -22,5 +22,6 @@
 
     <modules>
         <module>leoper</module>
+        <module>flopar</module>
     </modules>
 </project>
