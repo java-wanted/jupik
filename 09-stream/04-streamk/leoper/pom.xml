@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>jupik.stream</groupId>
+        <artifactId>streamk</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <groupId>jupik.stream.streamk</groupId>
+    <artifactId>jupik-stream-leoper</artifactId>
+    <version>1.0.0</version>
+
+    <name>Leoper Project</name>
+    <description>
+        An example how rip users lexicographically.
+    </description>
+
+    <dependencies>
+        <dependency>
+            <groupId>jupik.stream.interm</groupId>
+            <artifactId>jupik-stream-termage</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <compilerArgs>
+                        <arg>-Xlint:all</arg>
+                    </compilerArgs>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>jupik.stream.streamk.leoper.Main</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-shade-plugin</artifactId>
+                <configuration>
+                    <minimizeJar>true</minimizeJar>
+                    <filters>
+                        <filter>
+                            <artifact>jupik.stream.interm:jupik-stream-termage:*</artifact>
+                            <excludes>
+                                <exclude>META-INF/**</exclude>
+                            </excludes>
+                        </filter>
+                    </filters>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>

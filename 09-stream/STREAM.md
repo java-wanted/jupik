@@ -124,3 +124,14 @@ Solve the following user replace problem:
 - Replace users with her names
 
 - Print the resulting strings onto the terminal
+
+### Create Stream Operations
+
+There are stream operations that return an instance of the type Optional. This
+type allows to process a case when no elements have been provided to the operation.
+
+Use the type Optional to solve the lexicographic HRM problem:
+
+- Print out the information about the first user her name contains a letter "l"
+
+- If there is no such user, report about it.
