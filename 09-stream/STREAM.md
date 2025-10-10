@@ -165,3 +165,41 @@ Solve the following float stream problem:
   same way
 
 - Print the time taken by the calculation in parallel
+
+### Interview about Streams
+
+The following questions MUST BE answered to be hired on a position of a high
+society Java Plus Plus Junior Programmer:
+
+- What is a functional interface?
+
+- What does the stream operation do?
+
+- Why it can be required to transform a collection into a stream.
+
+  It is not bad to notice that the streams allows to separate a transform as a
+  set of operations from the way this operations are performed.
+
+- What do methods exist to create streams?
+
+- What are the differences of the terminal and intermediate operators?
+
+  Probably, it is not bad just to say that intermediate operators specifies some
+  rules to transform elements. And the terminal operation defines how to process
+  elements in accord with this rules and how to represent the result.
+
+- Provide examples of terminal and intermediate operators.
+
+- What does the map operator intended for?
+
+- What is the type Options? How does it relate to streams?
+
+- How does the filter operator work?
+
+  Formally, it is wrong to answer that the operator process elements. Answer that it
+  adds rules to exclude some elements from further processing.
+
+- There is a sorted operator. How will the sorting be done if this operation will be
+  called on a stream of elements of a custom type?
+
+  Actually, it is answered how to provide an operation to compare elements.
