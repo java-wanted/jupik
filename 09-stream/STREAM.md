@@ -105,3 +105,8 @@ The operations of Stream that do not return a stream are terminal operations.
 Let there is a type User with properties name and age. Print number of users
 with the age above 35 years. If so, the count operation could be used on
 the stream filtered by the age.
+
+The operation of Stream that return a stream are intermediate operation.
+
+Print three oldest users. If so, the limit operation could be used on the
+stream ordered by the age with the sorted operator.

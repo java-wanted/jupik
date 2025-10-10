@@ -22,5 +22,6 @@
 
     <modules>
         <module>termage</module>
+        <module>thrage</module>
     </modules>
 </project>
