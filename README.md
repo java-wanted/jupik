@@ -36,6 +36,8 @@ There are topics of the course:
 
 - [Stream API](09-stream/STREAM.md)
 
+- [Input Output](10-io/IO.md)
+
 ## DISCLAIMER
 
 The text provided is typed by me to solve or to prepare to solve the issues of
