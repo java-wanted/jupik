@@ -90,3 +90,39 @@ Solve the following VFS naming problem:
 - Append each name into a file
 
 - After the word exit, read the file and print date onto a terminal
+
+
+### Random Access Files
+
+There are types to handle data as byte streams:
+
+- InputStream and OutputStream - abstract types to handle bytes
+
+- FileInputStream and FileOutputStream - to handle files
+
+- BufferedInputStream and BufferedOutputStream - to buffer bytes of such streams
+
+There are type to handle data as character streams:
+
+- Reader and Writer - abstract types to handle characters
+
+- FileReader and FileWriter - to handle files
+
+- BufferedReader and BufferedWriter - to buffer characters of such streams
+
+- InputStreamReader and OutputStreamWriter - to handle byte streams as character
+  streams
+
+There is a type RandomAccessFiles to handle a file like an array of bytes. In such
+a way, the file could be opened for reading or for reading and writing.
+
+Solve the following VFS page problem:
+
+- Create a text of a great size.
+
+- Write a program that requests a number of a page of a document and outputs
+  this page onto a terminal
+
+  Consider that a page takes 300 bytes within the file.
+
+- Or terminates if the word exit entered
