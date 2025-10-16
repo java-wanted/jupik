@@ -50,3 +50,25 @@ Solve the following VFS problem:
   Write names in ASCII.
 
 - Read data from this file and output onto a terminal
+
+### Buffered File Input
+
+In Java, the type String is immutabe, meaning that if a string must be modified,
+e.g. it must be appended with a single character, the new string must be created.
+If it is required to modify a string, the StringBuilder type could be used instead.
+A similiar type StringBuffer is thread-safe also.
+
+To improve performance, do not read files by single byte at a time. Read data into
+an array, a few bytes at once.
+
+To read data as a stream of characters the InputStreamReader could be used instead.
+
+Solve the following VFS name space problem:
+
+- Create a file with a single line of names, separated by spaces
+
+- Read names into a list of names
+
+- Leave only names that starts with the latter A
+
+- Output the result onto a terminal

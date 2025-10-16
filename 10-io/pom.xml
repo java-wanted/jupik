@@ -76,5 +76,6 @@
     <modules>
         <module>01-intro</module>
         <module>02-input</module>
+        <module>03-bufin</module>
     </modules>
 </project>
