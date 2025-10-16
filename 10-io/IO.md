@@ -72,3 +72,21 @@ Solve the following VFS name space problem:
 - Leave only names that starts with the latter A
 
 - Output the result onto a terminal
+
+### Buffered Input Output
+
+To write a stream of bytes into a file, FileOutputStream could be used.
+
+To write and read data with buffering, it is possible to use instances of
+BufferedOutputStream and BufferedInputStream correspondently.
+
+There is a type Scanner. It allow to read an InputStream as a sequence of
+strings and numbers.
+
+Solve the following VFS naming problem:
+
+- Prompt and read names, a one per line, until the word exit is read
+
+- Append each name into a file
+
+- After the word exit, read the file and print date onto a terminal
