@@ -18,3 +18,22 @@ Java Virtual Machines, JVMs. There are Java standard libraries also.
 A JVM machine and a standard library form a Java Runtime Environment,
 JRE. A set of a translator, JRE and some utilities form a Java Development
 Kit, JDK.
+
+### Interfaces and abstract classes
+
+A Java interfaces defines operations. They allow to declare default and
+static operations and static properties also:
+
+    interface I
+    {
+        public static int f1 = ...;
+        public static int o1(int a1) {...}
+        public default int opi1(int a1) {...}
+    }
+
+An interface is an agreement on the behaviour of an object. It defines what an
+object can do, not how an object does it. The possibility to declare default
+operations has been added for backward compatibility only.
+
+Controversially, abstract classes allows to declare some part of logic that
+implements some behaviour.
