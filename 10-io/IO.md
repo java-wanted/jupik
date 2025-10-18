@@ -146,3 +146,30 @@ For example, solve the following HRM serialisation problem:
 - Save it into a file
 
 - And then, read it from this file
+
+A property of an object is not serialised if marked with the transient keyword. If
+so, this property is set to the default value when the object is de-serialised.
+
+Successors and non transient properties of a serialisable type MUST BE serialisable
+or they MUST provide default constructors to replace de-serialisation of successors.
+
+The serialisation and de-serialisation of any objects are implemented by Java
+translators, transparently for users. If it is required to store and load instancies
+in a custom way, e.g. to encrypt them, the type could extend the Externalisable
+interface.
+
+If so, the type MUST implement the addExternal and readExternal operations. Also,
+it MUST provide a default constructor to prepare instances to be set with readExternal.
+
+To validate version of a type on de-serialisation, the property serialVersionUID
+SHOULD BE provided.
+
+Solve the following mongrelisation problem:
+
+- Provide a type Cat with fields name, breed and weight
+
+- Create a collection of instances
+
+- Save this collection into a file
+
+- Then load the collection from this file and output names of cats.

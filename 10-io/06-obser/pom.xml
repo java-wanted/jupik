@@ -22,5 +22,6 @@
 
     <modules>
         <module>suser</module>
+        <module>cagrel</module>
     </modules>
 </project>
