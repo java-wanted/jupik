@@ -79,5 +79,6 @@
         <module>03-bufin</module>
         <module>04-bufio</module>
         <module>05-ranio</module>
+        <module>06-obser</module>
     </modules>
 </project>

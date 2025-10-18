@@ -126,3 +126,23 @@ Solve the following VFS page problem:
   Consider that a page takes 300 bytes within the file.
 
 - Or terminates if the word exit entered
+
+### Serialising
+
+To save an instance of type into a file, it is possible to use an ObjectOutputStream
+stream. If so, the type MUST implements the interface Serialisable. Controversially,
+to read an instances of this type from a file, it is possible to use an
+ObjectInputStream stream.
+
+The interface Serialisable has no operations. It is a marker, to notify
+Java translators that it is allowed to serialise an object. Writing of an object
+into a file is called serialisation and reading of it from a file is called
+de-serialisation.
+
+For example, solve the following HRM serialisation problem:
+
+- Create a type User with properties name name, lastname and age
+
+- Save it into a file
+
+- And then, read it from this file
