@@ -173,3 +173,40 @@ Solve the following mongrelisation problem:
 - Save this collection into a file
 
 - Then load the collection from this file and output names of cats.
+
+### Interview
+
+To be hired on a position of a high society Java Plus Plus Junior Programmer,
+it is REQUIRED to answer the following questions:
+
+- How to create a new file in the Java language?
+
+  It is not required to call the createNewFile operation. For example, output
+  streams creates files if not exist.
+
+- How to create a directory in Java?
+
+- How to get the list of files in a directory?
+
+  It is wrong to answer that the list and listFiles operations returns lists of
+  file names or instances of File. To list files, directories MUST BE filtered out
+  at least.
+
+- What are the common and different between InputStream, OutputStream, Reader and
+  Writer?
+
+- How to get data of a file as a stream of bytes?
+
+- Which types could increase the speed of reading and writing by using buffers?
+
+- For what is RandomAccessFile for?
+
+- What are serialisation and de-serialisation?
+
+- What conditions MUST BE satisfied to allow to serialise instances of a type?
+
+- For what is the keyword transient for?
+
+- What is the difference between Serialisable and Externalisable?
+
+- What is the try-with-resources statement? For what is it for?
