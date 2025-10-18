@@ -38,6 +38,8 @@ There are topics of the course:
 
 - [Input Output](10-io/IO.md)
 
+- [Java Core](11-core/CORE.md)
+
 ## DISCLAIMER
 
 The text provided is typed by me to solve or to prepare to solve the issues of
