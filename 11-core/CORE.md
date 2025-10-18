@@ -56,3 +56,26 @@ There is the finalise operation of the Object type. This operation is called by
 JVM before an instance is destroyed by the garbage collector. It is considered
 to be incorrect to rely on this operation due the fact that it is unpredictable
 when the garbage collector are going to destroy an object.
+
+### OOP paradigms
+
+Consider the following questions:
+
+- What is OOP?
+
+  It is a way to view a program as an hierarchy of data and their relationship.
+  If so, a set of operations relates to a specific element of this hierarchy,
+  an object, and allows to modify it.
+
+- What are the basic paradigms of OOP?
+
+  These are encapsulation, inheritance and polymorphism.
+
+  Encapsulation means that the only behaviour of an object as described by
+  its operations are taken into account to interact with it.
+
+  Inheritance means that the behaviour of an object is inherited from its
+  successors within the hierarchy and possibly extends it.
+
+  Polymorphism means that the behaviour of successors of an objects are similar
+  in some way.
