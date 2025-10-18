@@ -37,3 +37,22 @@ operations has been added for backward compatibility only.
 
 Controversially, abstract classes allows to declare some part of logic that
 implements some behaviour.
+
+### Exceptions and finalise
+
+There are Runtime exceptions, unchecked exceptions. Java translator allows not
+to catch them in a program. If thrown, such exceptions mean logic errors in the
+program.
+
+Other exceptions, checked exceptions, MUST BE caught with try catch statements.
+All exceptions are inherited from the type Exceptions.
+
+There is also the type Error. If thrown, it means some system errors, outside of
+the responsibility of a Java program, e.g. OutOfMemoryError.
+
+Types Exception and Error are inherited from the Throwable type.
+
+There is the finalise operation of the Object type. This operation is called by
+JVM before an instance is destroyed by the garbage collector. It is considered
+to be incorrect to rely on this operation due the fact that it is unpredictable
+when the garbage collector are going to destroy an object.
