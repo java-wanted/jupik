@@ -47,6 +47,11 @@ the course *Java from Zero to Junior Plus* bought by me for 5,400 Russian
 rubles on [Stepik][1]. But it is not intended to be a precise solution of the
 only issues of the course or to be based on the only materials of the course.
 
+## CONCLUSION
+
+The course is completed by passing tests and receiving a certificate of
+completion, [Certificate](11-core/stepik-certificate-118518-6c5a12f.pdf) .
+
 ## AUTHOR
 
   Boris Stankevich <microsoft-wanted@yandex.ru>.

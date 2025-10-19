@@ -186,3 +186,14 @@ a salary of a half hundred of thousand of Russian rubles at least:
 
 - Which types allows to increase performance of reading and writing into a file by
   using buffers?
+
+
+### Certificate
+
+The course is completed with tests:
+
+- The test on Java Level 1
+
+- The test on Java Level 2
+
+The certificate of completion is received.
